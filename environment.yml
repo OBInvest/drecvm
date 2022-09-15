@@ -1,0 +1,8 @@
+name: drecvmenv
+channels:
+  - conda-forge
+dependencies:
+  - python=3.9.12
+  - anaconda=2022.05
+  - prov=2.0.0
+  - pydot=1.4.2
