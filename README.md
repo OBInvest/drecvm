@@ -10,7 +10,7 @@ Execucao rapida (diretamente do Docker Hub)
 
 2 - Rodar o docker com os dados da imagem ja publicada no docker hub
 
-docker run -i -t -p 8888:8888 sauloandrade/fds:0.1 
+docker run -i -t -p 8888:8888 obinvest/drecvm:0.1
 
 3 - Abrir no navegador da maquina host e acessar a URL do jupyter notbook
 
