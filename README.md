@@ -5,7 +5,7 @@ Repositório utilizado para o trabalho final da discplina Fundamentos de Data Sc
 
 ### Pré-requisitos:
 
-Ter o Docker instalado para poder rodar o container no ambiente que será executado
+Ter o Docker instalado para poder rodar o container no ambiente que será executado!
 
 ### Plataformas testadas:
 
