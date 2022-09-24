@@ -1,7 +1,7 @@
 # drecvm - Dados de Resultados de Empresas de Capital Aberto obtidos da CVM.
 Repositório utilizado para o trabalho final da discplina Fundamentos de Data Science no Porograma de pós graduação em Informática (PPGI) da da UFRJ. 
 
-<!-- ![image](https://i.imgur.com/TBpVWm3.png) -->
+[![DOI](https://zenodo.org/badge/536824186.svg)](https://zenodo.org/badge/latestdoi/536824186)
 
 ### Pré-requisitos:
 
