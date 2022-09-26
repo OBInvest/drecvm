@@ -1,0 +1,1077 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<prov:document xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:void="http://vocab.deri.ie/void#" xmlns:ufrj="https://www.ufrj.br" xmlns:cvm="https://www.gov.br/cvm/pt-br" xmlns:cvm-cademp="https://dados.cvm.gov.br/dados/CIA_ABERTA/CAD/DADOS/" xmlns:cvm-dre-itr="https://dados.cvm.gov.br/dados/CIA_ABERTA/DOC/ITR/DADOS/" xmlns:cvm-dre-dfp="https://dados.cvm.gov.br/dados/CIA_ABERTA/DOC/DFP/DADOS/" xmlns:obinvest="https://www.obinvest.org" xmlns:prov="http://www.w3.org/ns/prov#" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <prov:agent prov:id="cvm:CVM">
+    <prov:type>prov:Organization</prov:type>
+    <foaf:name>Comissão de Valores Mobiliários</foaf:name>
+  </prov:agent>
+  <prov:agent prov:id="ufrj:UFRJ">
+    <prov:type>prov:Organization</prov:type>
+    <foaf:name>Universidade Federal do Rio de Janeiro</foaf:name>
+  </prov:agent>
+  <prov:agent prov:id="ufrj:PPGI">
+    <prov:type>prov:Organization</prov:type>
+    <foaf:name>Programa de Pós Graduação em Informática</foaf:name>
+  </prov:agent>
+  <prov:agent prov:id="ufrj:MAI712">
+    <prov:type>prov:Organization</prov:type>
+    <foaf:name>Disciplina de Fundamentos de Ciências de Dados</foaf:name>
+  </prov:agent>
+  <prov:agent prov:id="ufrj:GRUPO2">
+    <prov:type>prov:Organization</prov:type>
+    <foaf:name>Grupo 02 para o trabalho final</foaf:name>
+  </prov:agent>
+  <prov:agent prov:id="ufrj:Saulo">
+    <prov:type>prov:Person</prov:type>
+    <foaf:mbox>gilbertogilfgp@gmail.com</foaf:mbox>
+    <foaf:name>Gilberto Gil Fidelis Gomes Passos</foaf:name>
+  </prov:agent>
+  <prov:agent prov:id="ufrj:Gil">
+    <prov:type>prov:Person</prov:type>
+    <foaf:mbox>sauloandrade@gmail.com</foaf:mbox>
+    <foaf:name>Saulo Andrade Almeida</foaf:name>
+  </prov:agent>
+  <prov:agent prov:id="ufrj:Valquire">
+    <prov:type>prov:Person</prov:type>
+    <foaf:mbox>valquirej@gmail.com</foaf:mbox>
+    <foaf:name>Valquire da Silva de Jesus</foaf:name>
+  </prov:agent>
+  <prov:agent prov:id="ufrj:drecvm.ipynb">
+    <prov:label>Notebook Python utilizado no trabalho</prov:label>
+    <prov:type>prov:SoftwareAgent</prov:type>
+    <foaf:name>drecvm.ipynb</foaf:name>
+  </prov:agent>
+  <prov:actedOnBehalfOf>
+    <prov:delegate prov:ref="ufrj:PPGI"/>
+    <prov:responsible prov:ref="ufrj:UFRJ"/>
+  </prov:actedOnBehalfOf>
+  <prov:actedOnBehalfOf>
+    <prov:delegate prov:ref="ufrj:MAI712"/>
+    <prov:responsible prov:ref="ufrj:PPGI"/>
+  </prov:actedOnBehalfOf>
+  <prov:actedOnBehalfOf>
+    <prov:delegate prov:ref="ufrj:GRUPO2"/>
+    <prov:responsible prov:ref="ufrj:MAI712"/>
+  </prov:actedOnBehalfOf>
+  <prov:actedOnBehalfOf>
+    <prov:delegate prov:ref="ufrj:drecvm.ipynb"/>
+    <prov:responsible prov:ref="ufrj:GRUPO2"/>
+  </prov:actedOnBehalfOf>
+  <prov:actedOnBehalfOf>
+    <prov:delegate prov:ref="ufrj:Saulo"/>
+    <prov:responsible prov:ref="ufrj:GRUPO2"/>
+  </prov:actedOnBehalfOf>
+  <prov:actedOnBehalfOf>
+    <prov:delegate prov:ref="ufrj:Gil"/>
+    <prov:responsible prov:ref="ufrj:GRUPO2"/>
+  </prov:actedOnBehalfOf>
+  <prov:actedOnBehalfOf>
+    <prov:delegate prov:ref="ufrj:Valquire"/>
+    <prov:responsible prov:ref="ufrj:GRUPO2"/>
+  </prov:actedOnBehalfOf>
+  <prov:activity prov:id="cvm:criar-dataset"/>
+  <prov:activity prov:id="cvm:trabalho-final"/>
+  <prov:activity prov:id="ufrj:armazenar-datasets">
+    <prov:startTime>2022-09-15T00:00:00</prov:startTime>
+  </prov:activity>
+  <prov:entity prov:id="cvm-cademp:cad_cia_aberta.csv">
+    <prov:label>Dataset com dados cadastrais das empresas listadas na CVM</prov:label>
+    <prov:type xsi:type="xsd:string">void:Dataset</prov:type>
+  </prov:entity>
+  <prov:entity prov:id="cvm:dre-itr">
+    <prov:label>Documento que representa o conceito de DREs do tipo Trimestral</prov:label>
+    <prov:type xsi:type="xsd:string">foaf:Document</prov:type>
+  </prov:entity>
+  <prov:entity prov:id="cvm-dre-itr:itr_cia_aberta_2011.zip">
+    <prov:label>ZIP com Dataset com DRE trimestrais, do ano de 2011</prov:label>
+    <prov:type xsi:type="xsd:string">foaf:Document</prov:type>
+  </prov:entity>
+  <prov:entity prov:id="cvm-dre-itr:itr_cia_aberta_DRE_con_2011.csv">
+    <prov:label>Dataset com dados de DRE trimestrais, do ano de 2011</prov:label>
+    <prov:type xsi:type="xsd:string">void:Dataset</prov:type>
+  </prov:entity>
+  <prov:entity prov:id="cvm-dre-itr:itr_cia_aberta_2012.zip">
+    <prov:label>ZIP com Dataset com DRE trimestrais, do ano de 2012</prov:label>
+    <prov:type xsi:type="xsd:string">foaf:Document</prov:type>
+  </prov:entity>
+  <prov:entity prov:id="cvm-dre-itr:itr_cia_aberta_DRE_con_2012.csv">
+    <prov:label>Dataset com dados de DRE trimestrais,  do anos de 2012</prov:label>
+    <prov:type xsi:type="xsd:string">void:Dataset</prov:type>
+  </prov:entity>
+  <prov:entity prov:id="cvm-dre-itr:itr_cia_aberta_2013.zip">
+    <prov:label>ZIP com Dataset com DRE trimestrais, do ano de 2013</prov:label>
+    <prov:type xsi:type="xsd:string">foaf:Document</prov:type>
+  </prov:entity>
+  <prov:entity prov:id="cvm-dre-itr:itr_cia_aberta_DRE_con_2013.csv">
+    <prov:label>Dataset com dados de DRE trimestrais, do ano de 2013</prov:label>
+    <prov:type xsi:type="xsd:string">void:Dataset</prov:type>
+  </prov:entity>
+  <prov:entity prov:id="cvm-dre-itr:itr_cia_aberta_2014.zip">
+    <prov:label>ZIP com Dataset com DRE trimestrais, do ano de 2014</prov:label>
+    <prov:type xsi:type="xsd:string">foaf:Document</prov:type>
+  </prov:entity>
+  <prov:entity prov:id="cvm-dre-itr:itr_cia_aberta_DRE_con_2014.csv">
+    <prov:label>Dataset com dados de DRE trimestrais,  do anos de 2014</prov:label>
+    <prov:type xsi:type="xsd:string">void:Dataset</prov:type>
+  </prov:entity>
+  <prov:entity prov:id="cvm-dre-itr:itr_cia_aberta_2015.zip">
+    <prov:label>ZIP com Dataset com DRE trimestrais, do ano de 2015</prov:label>
+    <prov:type xsi:type="xsd:string">foaf:Document</prov:type>
+  </prov:entity>
+  <prov:entity prov:id="cvm-dre-itr:itr_cia_aberta_DRE_con_2015.csv">
+    <prov:label>Dataset com dados de DRE trimestrais, do ano de 2015</prov:label>
+    <prov:type xsi:type="xsd:string">void:Dataset</prov:type>
+  </prov:entity>
+  <prov:entity prov:id="cvm-dre-itr:itr_cia_aberta_2016.zip">
+    <prov:label>ZIP com Dataset com DRE trimestrais, do ano de 2016</prov:label>
+    <prov:type xsi:type="xsd:string">foaf:Document</prov:type>
+  </prov:entity>
+  <prov:entity prov:id="cvm-dre-itr:itr_cia_aberta_DRE_con_2016.csv">
+    <prov:label>Dataset com dados de DRE trimestrais, do ano de 2016</prov:label>
+    <prov:type xsi:type="xsd:string">void:Dataset</prov:type>
+  </prov:entity>
+  <prov:entity prov:id="cvm-dre-itr:itr_cia_aberta_2017.zip">
+    <prov:label>ZIP com Dataset com DRE trimestrais, do ano de 2017</prov:label>
+    <prov:type xsi:type="xsd:string">foaf:Document</prov:type>
+  </prov:entity>
+  <prov:entity prov:id="cvm-dre-itr:itr_cia_aberta_DRE_con_2017.csv">
+    <prov:label>Dataset com dados de DRE trimestrais,  do anos de 2017</prov:label>
+    <prov:type xsi:type="xsd:string">void:Dataset</prov:type>
+  </prov:entity>
+  <prov:entity prov:id="cvm-dre-itr:itr_cia_aberta_2018.zip">
+    <prov:label>ZIP com Dataset com DRE trimestrais, do ano de 2018</prov:label>
+    <prov:type xsi:type="xsd:string">foaf:Document</prov:type>
+  </prov:entity>
+  <prov:entity prov:id="cvm-dre-itr:itr_cia_aberta_DRE_con_2018.csv">
+    <prov:label>Dataset com dados de DRE trimestrais, do ano de 2018</prov:label>
+    <prov:type xsi:type="xsd:string">void:Dataset</prov:type>
+  </prov:entity>
+  <prov:entity prov:id="cvm-dre-itr:itr_cia_aberta_2019.zip">
+    <prov:label>ZIP com Dataset com DRE trimestrais, do ano de 2019</prov:label>
+    <prov:type xsi:type="xsd:string">foaf:Document</prov:type>
+  </prov:entity>
+  <prov:entity prov:id="cvm-dre-itr:itr_cia_aberta_DRE_con_2019.csv">
+    <prov:label>Dataset com dados de DRE trimestrais,  do anos de 2019</prov:label>
+    <prov:type xsi:type="xsd:string">void:Dataset</prov:type>
+  </prov:entity>
+  <prov:entity prov:id="cvm-dre-itr:itr_cia_aberta_2020.zip">
+    <prov:label>ZIP com Dataset com DRE trimestrais, do ano de 2020</prov:label>
+    <prov:type xsi:type="xsd:string">foaf:Document</prov:type>
+  </prov:entity>
+  <prov:entity prov:id="cvm-dre-itr:itr_cia_aberta_DRE_con_2020.csv">
+    <prov:label>Dataset com dados de DRE trimestrais, do ano de 2020</prov:label>
+    <prov:type xsi:type="xsd:string">void:Dataset</prov:type>
+  </prov:entity>
+  <prov:entity prov:id="cvm-dre-itr:itr_cia_aberta_2021.zip">
+    <prov:label>ZIP com Dataset com DRE trimestrais, do ano de 2021</prov:label>
+    <prov:type xsi:type="xsd:string">foaf:Document</prov:type>
+  </prov:entity>
+  <prov:entity prov:id="cvm-dre-itr:itr_cia_aberta_DRE_con_2021.csv">
+    <prov:label>Dataset com dados de DRE trimestrais, do ano de 2021</prov:label>
+    <prov:type xsi:type="xsd:string">void:Dataset</prov:type>
+  </prov:entity>
+  <prov:entity prov:id="cvm:dre-dfp">
+    <prov:label>Documento que representa o conceito de DREs do tipo Trimestral</prov:label>
+    <prov:type xsi:type="xsd:string">foaf:Document</prov:type>
+  </prov:entity>
+  <prov:entity prov:id="cvm-dre-dfp:dfp_cia_aberta_2011.zip">
+    <prov:label>ZIP com Dataset com DRE anual de 2011</prov:label>
+    <prov:type xsi:type="xsd:string">foaf:Document</prov:type>
+  </prov:entity>
+  <prov:entity prov:id="cvm-dre-dfp:dfp_cia_aberta_DRE_con_2011.csv">
+    <prov:label>Dataset com dados de DRE anual de 2011</prov:label>
+    <prov:type xsi:type="xsd:string">void:Dataset</prov:type>
+  </prov:entity>
+  <prov:entity prov:id="cvm-dre-dfp:dfp_cia_aberta_2012.zip">
+    <prov:label>ZIP com Dataset com DRE anual de 2012</prov:label>
+    <prov:type xsi:type="xsd:string">foaf:Document</prov:type>
+  </prov:entity>
+  <prov:entity prov:id="cvm-dre-dfp:dfp_cia_aberta_DRE_con_2012.csv">
+    <prov:label>Dataset com dados de DRE anual,  do anos de 2012</prov:label>
+    <prov:type xsi:type="xsd:string">void:Dataset</prov:type>
+  </prov:entity>
+  <prov:entity prov:id="cvm-dre-dfp:dfp_cia_aberta_2013.zip">
+    <prov:label>ZIP com Dataset com DRE anual de 2013</prov:label>
+    <prov:type xsi:type="xsd:string">foaf:Document</prov:type>
+  </prov:entity>
+  <prov:entity prov:id="cvm-dre-dfp:dfp_cia_aberta_DRE_con_2013.csv">
+    <prov:label>Dataset com dados de DRE anual de 2013</prov:label>
+    <prov:type xsi:type="xsd:string">void:Dataset</prov:type>
+  </prov:entity>
+  <prov:entity prov:id="cvm-dre-dfp:dfp_cia_aberta_2014.zip">
+    <prov:label>ZIP com Dataset com DRE anual de 2014</prov:label>
+    <prov:type xsi:type="xsd:string">foaf:Document</prov:type>
+  </prov:entity>
+  <prov:entity prov:id="cvm-dre-dfp:dfp_cia_aberta_DRE_con_2014.csv">
+    <prov:label>Dataset com dados de DRE anual,  do anos de 2014</prov:label>
+    <prov:type xsi:type="xsd:string">void:Dataset</prov:type>
+  </prov:entity>
+  <prov:entity prov:id="cvm-dre-dfp:dfp_cia_aberta_2015.zip">
+    <prov:label>ZIP com Dataset com DRE anual de 2015</prov:label>
+    <prov:type xsi:type="xsd:string">foaf:Document</prov:type>
+  </prov:entity>
+  <prov:entity prov:id="cvm-dre-dfp:dfp_cia_aberta_DRE_con_2015.csv">
+    <prov:label>Dataset com dados de DRE anual de 2015</prov:label>
+    <prov:type xsi:type="xsd:string">void:Dataset</prov:type>
+  </prov:entity>
+  <prov:entity prov:id="cvm-dre-dfp:dfp_cia_aberta_2016.zip">
+    <prov:label>ZIP com Dataset com DRE anual de 2016</prov:label>
+    <prov:type xsi:type="xsd:string">foaf:Document</prov:type>
+  </prov:entity>
+  <prov:entity prov:id="cvm-dre-dfp:dfp_cia_aberta_DRE_con_2016.csv">
+    <prov:label>Dataset com dados de DRE anual de 2016</prov:label>
+    <prov:type xsi:type="xsd:string">void:Dataset</prov:type>
+  </prov:entity>
+  <prov:entity prov:id="cvm-dre-dfp:dfp_cia_aberta_2017.zip">
+    <prov:label>ZIP com Dataset com DRE anual de 2017</prov:label>
+    <prov:type xsi:type="xsd:string">foaf:Document</prov:type>
+  </prov:entity>
+  <prov:entity prov:id="cvm-dre-dfp:dfp_cia_aberta_DRE_con_2017.csv">
+    <prov:label>Dataset com dados de DRE anual,  do anos de 2017</prov:label>
+    <prov:type xsi:type="xsd:string">void:Dataset</prov:type>
+  </prov:entity>
+  <prov:entity prov:id="cvm-dre-dfp:dfp_cia_aberta_2018.zip">
+    <prov:label>ZIP com Dataset com DRE anual de 2018</prov:label>
+    <prov:type xsi:type="xsd:string">foaf:Document</prov:type>
+  </prov:entity>
+  <prov:entity prov:id="cvm-dre-dfp:dfp_cia_aberta_DRE_con_2018.csv">
+    <prov:label>Dataset com dados de DRE anual de 2018</prov:label>
+    <prov:type xsi:type="xsd:string">void:Dataset</prov:type>
+  </prov:entity>
+  <prov:entity prov:id="cvm-dre-dfp:dfp_cia_aberta_2019.zip">
+    <prov:label>ZIP com Dataset com DRE anual de 2019</prov:label>
+    <prov:type xsi:type="xsd:string">foaf:Document</prov:type>
+  </prov:entity>
+  <prov:entity prov:id="cvm-dre-dfp:dfp_cia_aberta_DRE_con_2019.csv">
+    <prov:label>Dataset com dados de DRE anual de 2019</prov:label>
+    <prov:type xsi:type="xsd:string">void:Dataset</prov:type>
+  </prov:entity>
+  <prov:entity prov:id="cvm-dre-dfp:dfp_cia_aberta_2020.zip">
+    <prov:label>ZIP com Dataset com DRE anual de 2020</prov:label>
+    <prov:type xsi:type="xsd:string">foaf:Document</prov:type>
+  </prov:entity>
+  <prov:entity prov:id="cvm-dre-dfp:dfp_cia_aberta_DRE_con_2020.csv">
+    <prov:label>Dataset com dados de DRE anual de 2020</prov:label>
+    <prov:type xsi:type="xsd:string">void:Dataset</prov:type>
+  </prov:entity>
+  <prov:entity prov:id="cvm-dre-dfp:dfp_cia_aberta_2021.zip">
+    <prov:label>ZIP com Dataset com DRE anual de 2021</prov:label>
+    <prov:type xsi:type="xsd:string">foaf:Document</prov:type>
+  </prov:entity>
+  <prov:entity prov:id="cvm-dre-dfp:dfp_cia_aberta_DRE_con_2021.csv">
+    <prov:label>Dataset com dados de DRE anual de 2021</prov:label>
+    <prov:type xsi:type="xsd:string">void:Dataset</prov:type>
+  </prov:entity>
+  <prov:entity prov:id="obinvest:github-drecvm">
+    <prov:label>Repositorio DRECVM da OBInvest</prov:label>
+    <prov:type>prov:Collection</prov:type>
+  </prov:entity>
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="cvm:criar-dataset"/>
+    <prov:agent prov:ref="cvm:CVM"/>
+  </prov:wasAssociatedWith>
+  <prov:wasGeneratedBy>
+    <prov:entity prov:ref="cvm-cademp:cad_cia_aberta.csv"/>
+    <prov:activity prov:ref="cvm:criar-dataset"/>
+  </prov:wasGeneratedBy>
+  <prov:wasGeneratedBy>
+    <prov:entity prov:ref="cvm:dre-itr"/>
+    <prov:activity prov:ref="cvm:criar-dataset"/>
+  </prov:wasGeneratedBy>
+  <prov:wasGeneratedBy>
+    <prov:entity prov:ref="cvm:dre-dfp"/>
+    <prov:activity prov:ref="cvm:criar-dataset"/>
+  </prov:wasGeneratedBy>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="cvm-dre-itr:itr_cia_aberta_2011.zip"/>
+    <prov:usedEntity prov:ref="cvm:dre-itr"/>
+  </prov:wasDerivedFrom>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="cvm-dre-itr:itr_cia_aberta_2012.zip"/>
+    <prov:usedEntity prov:ref="cvm:dre-itr"/>
+  </prov:wasDerivedFrom>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="cvm-dre-itr:itr_cia_aberta_2013.zip"/>
+    <prov:usedEntity prov:ref="cvm:dre-itr"/>
+  </prov:wasDerivedFrom>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="cvm-dre-itr:itr_cia_aberta_2014.zip"/>
+    <prov:usedEntity prov:ref="cvm:dre-itr"/>
+  </prov:wasDerivedFrom>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="cvm-dre-itr:itr_cia_aberta_2015.zip"/>
+    <prov:usedEntity prov:ref="cvm:dre-itr"/>
+  </prov:wasDerivedFrom>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="cvm-dre-itr:itr_cia_aberta_2016.zip"/>
+    <prov:usedEntity prov:ref="cvm:dre-itr"/>
+  </prov:wasDerivedFrom>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="cvm-dre-itr:itr_cia_aberta_2017.zip"/>
+    <prov:usedEntity prov:ref="cvm:dre-itr"/>
+  </prov:wasDerivedFrom>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="cvm-dre-itr:itr_cia_aberta_2018.zip"/>
+    <prov:usedEntity prov:ref="cvm:dre-itr"/>
+  </prov:wasDerivedFrom>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="cvm-dre-itr:itr_cia_aberta_2019.zip"/>
+    <prov:usedEntity prov:ref="cvm:dre-itr"/>
+  </prov:wasDerivedFrom>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="cvm-dre-itr:itr_cia_aberta_2020.zip"/>
+    <prov:usedEntity prov:ref="cvm:dre-itr"/>
+  </prov:wasDerivedFrom>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="cvm-dre-itr:itr_cia_aberta_2021.zip"/>
+    <prov:usedEntity prov:ref="cvm:dre-itr"/>
+  </prov:wasDerivedFrom>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="cvm-dre-dfp:dfp_cia_aberta_2011.zip"/>
+    <prov:usedEntity prov:ref="cvm:dre-dfp"/>
+  </prov:wasDerivedFrom>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="cvm-dre-dfp:dfp_cia_aberta_2012.zip"/>
+    <prov:usedEntity prov:ref="cvm:dre-dfp"/>
+  </prov:wasDerivedFrom>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="cvm-dre-dfp:dfp_cia_aberta_2013.zip"/>
+    <prov:usedEntity prov:ref="cvm:dre-dfp"/>
+  </prov:wasDerivedFrom>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="cvm-dre-dfp:dfp_cia_aberta_2014.zip"/>
+    <prov:usedEntity prov:ref="cvm:dre-dfp"/>
+  </prov:wasDerivedFrom>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="cvm-dre-dfp:dfp_cia_aberta_2015.zip"/>
+    <prov:usedEntity prov:ref="cvm:dre-dfp"/>
+  </prov:wasDerivedFrom>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="cvm-dre-dfp:dfp_cia_aberta_2016.zip"/>
+    <prov:usedEntity prov:ref="cvm:dre-dfp"/>
+  </prov:wasDerivedFrom>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="cvm-dre-dfp:dfp_cia_aberta_2017.zip"/>
+    <prov:usedEntity prov:ref="cvm:dre-dfp"/>
+  </prov:wasDerivedFrom>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="cvm-dre-dfp:dfp_cia_aberta_2018.zip"/>
+    <prov:usedEntity prov:ref="cvm:dre-dfp"/>
+  </prov:wasDerivedFrom>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="cvm-dre-dfp:dfp_cia_aberta_2019.zip"/>
+    <prov:usedEntity prov:ref="cvm:dre-dfp"/>
+  </prov:wasDerivedFrom>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="cvm-dre-dfp:dfp_cia_aberta_2020.zip"/>
+    <prov:usedEntity prov:ref="cvm:dre-dfp"/>
+  </prov:wasDerivedFrom>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="cvm-dre-dfp:dfp_cia_aberta_2021.zip"/>
+    <prov:usedEntity prov:ref="cvm:dre-dfp"/>
+  </prov:wasDerivedFrom>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="cvm-dre-itr:itr_cia_aberta_DRE_con_2011.csv"/>
+    <prov:usedEntity prov:ref="cvm-dre-itr:itr_cia_aberta_2011.zip"/>
+  </prov:wasDerivedFrom>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="cvm-dre-itr:itr_cia_aberta_DRE_con_2012.csv"/>
+    <prov:usedEntity prov:ref="cvm-dre-itr:itr_cia_aberta_2012.zip"/>
+  </prov:wasDerivedFrom>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="cvm-dre-itr:itr_cia_aberta_DRE_con_2013.csv"/>
+    <prov:usedEntity prov:ref="cvm-dre-itr:itr_cia_aberta_2013.zip"/>
+  </prov:wasDerivedFrom>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="cvm-dre-itr:itr_cia_aberta_DRE_con_2014.csv"/>
+    <prov:usedEntity prov:ref="cvm-dre-itr:itr_cia_aberta_2014.zip"/>
+  </prov:wasDerivedFrom>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="cvm-dre-itr:itr_cia_aberta_DRE_con_2015.csv"/>
+    <prov:usedEntity prov:ref="cvm-dre-itr:itr_cia_aberta_2015.zip"/>
+  </prov:wasDerivedFrom>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="cvm-dre-itr:itr_cia_aberta_DRE_con_2016.csv"/>
+    <prov:usedEntity prov:ref="cvm-dre-itr:itr_cia_aberta_2016.zip"/>
+  </prov:wasDerivedFrom>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="cvm-dre-itr:itr_cia_aberta_DRE_con_2017.csv"/>
+    <prov:usedEntity prov:ref="cvm-dre-itr:itr_cia_aberta_2017.zip"/>
+  </prov:wasDerivedFrom>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="cvm-dre-itr:itr_cia_aberta_DRE_con_2018.csv"/>
+    <prov:usedEntity prov:ref="cvm-dre-itr:itr_cia_aberta_2018.zip"/>
+  </prov:wasDerivedFrom>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="cvm-dre-itr:itr_cia_aberta_DRE_con_2019.csv"/>
+    <prov:usedEntity prov:ref="cvm-dre-itr:itr_cia_aberta_2019.zip"/>
+  </prov:wasDerivedFrom>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="cvm-dre-itr:itr_cia_aberta_DRE_con_2020.csv"/>
+    <prov:usedEntity prov:ref="cvm-dre-itr:itr_cia_aberta_2020.zip"/>
+  </prov:wasDerivedFrom>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="cvm-dre-itr:itr_cia_aberta_DRE_con_2021.csv"/>
+    <prov:usedEntity prov:ref="cvm-dre-itr:itr_cia_aberta_2021.zip"/>
+  </prov:wasDerivedFrom>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="cvm-dre-dfp:dfp_cia_aberta_DRE_con_2011.csv"/>
+    <prov:usedEntity prov:ref="cvm-dre-dfp:dfp_cia_aberta_2011.zip"/>
+  </prov:wasDerivedFrom>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="cvm-dre-dfp:dfp_cia_aberta_DRE_con_2012.csv"/>
+    <prov:usedEntity prov:ref="cvm-dre-dfp:dfp_cia_aberta_2012.zip"/>
+  </prov:wasDerivedFrom>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="cvm-dre-dfp:dfp_cia_aberta_DRE_con_2013.csv"/>
+    <prov:usedEntity prov:ref="cvm-dre-dfp:dfp_cia_aberta_2013.zip"/>
+  </prov:wasDerivedFrom>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="cvm-dre-dfp:dfp_cia_aberta_DRE_con_2014.csv"/>
+    <prov:usedEntity prov:ref="cvm-dre-dfp:dfp_cia_aberta_2014.zip"/>
+  </prov:wasDerivedFrom>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="cvm-dre-dfp:dfp_cia_aberta_DRE_con_2015.csv"/>
+    <prov:usedEntity prov:ref="cvm-dre-dfp:dfp_cia_aberta_2015.zip"/>
+  </prov:wasDerivedFrom>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="cvm-dre-dfp:dfp_cia_aberta_DRE_con_2016.csv"/>
+    <prov:usedEntity prov:ref="cvm-dre-dfp:dfp_cia_aberta_2016.zip"/>
+  </prov:wasDerivedFrom>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="cvm-dre-dfp:dfp_cia_aberta_DRE_con_2017.csv"/>
+    <prov:usedEntity prov:ref="cvm-dre-dfp:dfp_cia_aberta_2017.zip"/>
+  </prov:wasDerivedFrom>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="cvm-dre-dfp:dfp_cia_aberta_DRE_con_2018.csv"/>
+    <prov:usedEntity prov:ref="cvm-dre-dfp:dfp_cia_aberta_2018.zip"/>
+  </prov:wasDerivedFrom>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="cvm-dre-dfp:dfp_cia_aberta_DRE_con_2019.csv"/>
+    <prov:usedEntity prov:ref="cvm-dre-dfp:dfp_cia_aberta_2019.zip"/>
+  </prov:wasDerivedFrom>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="cvm-dre-dfp:dfp_cia_aberta_DRE_con_2020.csv"/>
+    <prov:usedEntity prov:ref="cvm-dre-dfp:dfp_cia_aberta_2020.zip"/>
+  </prov:wasDerivedFrom>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="cvm-dre-dfp:dfp_cia_aberta_DRE_con_2021.csv"/>
+    <prov:usedEntity prov:ref="cvm-dre-dfp:dfp_cia_aberta_2021.zip"/>
+  </prov:wasDerivedFrom>
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="cvm:trabalho-final"/>
+    <prov:agent prov:ref="ufrj:MAI712"/>
+  </prov:wasAssociatedWith>
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="cvm:trabalho-final"/>
+    <prov:agent prov:ref="ufrj:GRUPO2"/>
+  </prov:wasAssociatedWith>
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="cvm:trabalho-final"/>
+    <prov:agent prov:ref="ufrj:drecvm.ipynb"/>
+  </prov:wasAssociatedWith>
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="ufrj:armazenar-datasets"/>
+    <prov:agent prov:ref="ufrj:GRUPO2"/>
+  </prov:wasAssociatedWith>
+  <prov:used>
+    <prov:activity prov:ref="ufrj:armazenar-datasets"/>
+    <prov:entity prov:ref="cvm-cademp:cad_cia_aberta.csv"/>
+  </prov:used>
+  <prov:used>
+    <prov:activity prov:ref="ufrj:armazenar-datasets"/>
+    <prov:entity prov:ref="cvm-dre-itr:itr_cia_aberta_DRE_con_2011.csv"/>
+  </prov:used>
+  <prov:used>
+    <prov:activity prov:ref="ufrj:armazenar-datasets"/>
+    <prov:entity prov:ref="cvm-dre-itr:itr_cia_aberta_DRE_con_2012.csv"/>
+  </prov:used>
+  <prov:used>
+    <prov:activity prov:ref="ufrj:armazenar-datasets"/>
+    <prov:entity prov:ref="cvm-dre-itr:itr_cia_aberta_DRE_con_2013.csv"/>
+  </prov:used>
+  <prov:used>
+    <prov:activity prov:ref="ufrj:armazenar-datasets"/>
+    <prov:entity prov:ref="cvm-dre-itr:itr_cia_aberta_DRE_con_2014.csv"/>
+  </prov:used>
+  <prov:used>
+    <prov:activity prov:ref="ufrj:armazenar-datasets"/>
+    <prov:entity prov:ref="cvm-dre-itr:itr_cia_aberta_DRE_con_2015.csv"/>
+  </prov:used>
+  <prov:used>
+    <prov:activity prov:ref="ufrj:armazenar-datasets"/>
+    <prov:entity prov:ref="cvm-dre-itr:itr_cia_aberta_DRE_con_2016.csv"/>
+  </prov:used>
+  <prov:used>
+    <prov:activity prov:ref="ufrj:armazenar-datasets"/>
+    <prov:entity prov:ref="cvm-dre-itr:itr_cia_aberta_DRE_con_2017.csv"/>
+  </prov:used>
+  <prov:used>
+    <prov:activity prov:ref="ufrj:armazenar-datasets"/>
+    <prov:entity prov:ref="cvm-dre-itr:itr_cia_aberta_DRE_con_2018.csv"/>
+  </prov:used>
+  <prov:used>
+    <prov:activity prov:ref="ufrj:armazenar-datasets"/>
+    <prov:entity prov:ref="cvm-dre-itr:itr_cia_aberta_DRE_con_2019.csv"/>
+  </prov:used>
+  <prov:used>
+    <prov:activity prov:ref="ufrj:armazenar-datasets"/>
+    <prov:entity prov:ref="cvm-dre-itr:itr_cia_aberta_DRE_con_2020.csv"/>
+  </prov:used>
+  <prov:used>
+    <prov:activity prov:ref="ufrj:armazenar-datasets"/>
+    <prov:entity prov:ref="cvm-dre-itr:itr_cia_aberta_DRE_con_2021.csv"/>
+  </prov:used>
+  <prov:used>
+    <prov:activity prov:ref="ufrj:armazenar-datasets"/>
+    <prov:entity prov:ref="cvm-dre-dfp:dfp_cia_aberta_DRE_con_2011.csv"/>
+  </prov:used>
+  <prov:used>
+    <prov:activity prov:ref="ufrj:armazenar-datasets"/>
+    <prov:entity prov:ref="cvm-dre-dfp:dfp_cia_aberta_DRE_con_2012.csv"/>
+  </prov:used>
+  <prov:used>
+    <prov:activity prov:ref="ufrj:armazenar-datasets"/>
+    <prov:entity prov:ref="cvm-dre-dfp:dfp_cia_aberta_DRE_con_2013.csv"/>
+  </prov:used>
+  <prov:used>
+    <prov:activity prov:ref="ufrj:armazenar-datasets"/>
+    <prov:entity prov:ref="cvm-dre-dfp:dfp_cia_aberta_DRE_con_2014.csv"/>
+  </prov:used>
+  <prov:used>
+    <prov:activity prov:ref="ufrj:armazenar-datasets"/>
+    <prov:entity prov:ref="cvm-dre-dfp:dfp_cia_aberta_DRE_con_2015.csv"/>
+  </prov:used>
+  <prov:used>
+    <prov:activity prov:ref="ufrj:armazenar-datasets"/>
+    <prov:entity prov:ref="cvm-dre-dfp:dfp_cia_aberta_DRE_con_2016.csv"/>
+  </prov:used>
+  <prov:used>
+    <prov:activity prov:ref="ufrj:armazenar-datasets"/>
+    <prov:entity prov:ref="cvm-dre-dfp:dfp_cia_aberta_DRE_con_2017.csv"/>
+  </prov:used>
+  <prov:used>
+    <prov:activity prov:ref="ufrj:armazenar-datasets"/>
+    <prov:entity prov:ref="cvm-dre-dfp:dfp_cia_aberta_DRE_con_2018.csv"/>
+  </prov:used>
+  <prov:used>
+    <prov:activity prov:ref="ufrj:armazenar-datasets"/>
+    <prov:entity prov:ref="cvm-dre-dfp:dfp_cia_aberta_DRE_con_2019.csv"/>
+  </prov:used>
+  <prov:used>
+    <prov:activity prov:ref="ufrj:armazenar-datasets"/>
+    <prov:entity prov:ref="cvm-dre-dfp:dfp_cia_aberta_DRE_con_2020.csv"/>
+  </prov:used>
+  <prov:used>
+    <prov:activity prov:ref="ufrj:armazenar-datasets"/>
+    <prov:entity prov:ref="cvm-dre-dfp:dfp_cia_aberta_DRE_con_2021.csv"/>
+  </prov:used>
+  <prov:wasGeneratedBy>
+    <prov:entity prov:ref="obinvest:github-drecvm"/>
+    <prov:activity prov:ref="ufrj:armazenar-datasets"/>
+  </prov:wasGeneratedBy>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="cvm-cademp:cad_cia_aberta.csv"/>
+    <prov:usedEntity prov:ref="obinvest:github-drecvm"/>
+  </prov:wasDerivedFrom>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="cvm-dre-itr:itr_cia_aberta_DRE_con_2011.csv"/>
+    <prov:usedEntity prov:ref="obinvest:github-drecvm"/>
+  </prov:wasDerivedFrom>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="cvm-dre-itr:itr_cia_aberta_DRE_con_2012.csv"/>
+    <prov:usedEntity prov:ref="obinvest:github-drecvm"/>
+  </prov:wasDerivedFrom>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="cvm-dre-itr:itr_cia_aberta_DRE_con_2013.csv"/>
+    <prov:usedEntity prov:ref="obinvest:github-drecvm"/>
+  </prov:wasDerivedFrom>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="cvm-dre-itr:itr_cia_aberta_DRE_con_2014.csv"/>
+    <prov:usedEntity prov:ref="obinvest:github-drecvm"/>
+  </prov:wasDerivedFrom>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="cvm-dre-itr:itr_cia_aberta_DRE_con_2015.csv"/>
+    <prov:usedEntity prov:ref="obinvest:github-drecvm"/>
+  </prov:wasDerivedFrom>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="cvm-dre-itr:itr_cia_aberta_DRE_con_2016.csv"/>
+    <prov:usedEntity prov:ref="obinvest:github-drecvm"/>
+  </prov:wasDerivedFrom>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="cvm-dre-itr:itr_cia_aberta_DRE_con_2017.csv"/>
+    <prov:usedEntity prov:ref="obinvest:github-drecvm"/>
+  </prov:wasDerivedFrom>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="cvm-dre-itr:itr_cia_aberta_DRE_con_2018.csv"/>
+    <prov:usedEntity prov:ref="obinvest:github-drecvm"/>
+  </prov:wasDerivedFrom>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="cvm-dre-itr:itr_cia_aberta_DRE_con_2019.csv"/>
+    <prov:usedEntity prov:ref="obinvest:github-drecvm"/>
+  </prov:wasDerivedFrom>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="cvm-dre-itr:itr_cia_aberta_DRE_con_2020.csv"/>
+    <prov:usedEntity prov:ref="obinvest:github-drecvm"/>
+  </prov:wasDerivedFrom>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="cvm-dre-itr:itr_cia_aberta_DRE_con_2021.csv"/>
+    <prov:usedEntity prov:ref="obinvest:github-drecvm"/>
+  </prov:wasDerivedFrom>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="cvm-dre-dfp:dfp_cia_aberta_DRE_con_2011.csv"/>
+    <prov:usedEntity prov:ref="obinvest:github-drecvm"/>
+  </prov:wasDerivedFrom>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="cvm-dre-dfp:dfp_cia_aberta_DRE_con_2012.csv"/>
+    <prov:usedEntity prov:ref="obinvest:github-drecvm"/>
+  </prov:wasDerivedFrom>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="cvm-dre-dfp:dfp_cia_aberta_DRE_con_2013.csv"/>
+    <prov:usedEntity prov:ref="obinvest:github-drecvm"/>
+  </prov:wasDerivedFrom>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="cvm-dre-dfp:dfp_cia_aberta_DRE_con_2014.csv"/>
+    <prov:usedEntity prov:ref="obinvest:github-drecvm"/>
+  </prov:wasDerivedFrom>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="cvm-dre-dfp:dfp_cia_aberta_DRE_con_2015.csv"/>
+    <prov:usedEntity prov:ref="obinvest:github-drecvm"/>
+  </prov:wasDerivedFrom>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="cvm-dre-dfp:dfp_cia_aberta_DRE_con_2016.csv"/>
+    <prov:usedEntity prov:ref="obinvest:github-drecvm"/>
+  </prov:wasDerivedFrom>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="cvm-dre-dfp:dfp_cia_aberta_DRE_con_2017.csv"/>
+    <prov:usedEntity prov:ref="obinvest:github-drecvm"/>
+  </prov:wasDerivedFrom>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="cvm-dre-dfp:dfp_cia_aberta_DRE_con_2018.csv"/>
+    <prov:usedEntity prov:ref="obinvest:github-drecvm"/>
+  </prov:wasDerivedFrom>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="cvm-dre-dfp:dfp_cia_aberta_DRE_con_2019.csv"/>
+    <prov:usedEntity prov:ref="obinvest:github-drecvm"/>
+  </prov:wasDerivedFrom>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="cvm-dre-dfp:dfp_cia_aberta_DRE_con_2020.csv"/>
+    <prov:usedEntity prov:ref="obinvest:github-drecvm"/>
+  </prov:wasDerivedFrom>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="cvm-dre-dfp:dfp_cia_aberta_DRE_con_2021.csv"/>
+    <prov:usedEntity prov:ref="obinvest:github-drecvm"/>
+  </prov:wasDerivedFrom>
+  <prov:activity prov:id="ufrj:carregar_datasets">
+    <prov:startTime>2022-09-26T01:29:59.634542</prov:startTime>
+    <prov:endTime>2022-09-26T01:30:01.070862</prov:endTime>
+  </prov:activity>
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="ufrj:carregar_datasets"/>
+    <prov:agent prov:ref="ufrj:drecvm.ipynb"/>
+  </prov:wasAssociatedWith>
+  <prov:used>
+    <prov:activity prov:ref="ufrj:carregar_datasets"/>
+    <prov:entity prov:ref="cvm-cademp:cad_cia_aberta.csv"/>
+  </prov:used>
+  <prov:used>
+    <prov:activity prov:ref="ufrj:carregar_datasets"/>
+    <prov:entity prov:ref="cvm-dre-itr:itr_cia_aberta_DRE_con_2011.csv"/>
+  </prov:used>
+  <prov:used>
+    <prov:activity prov:ref="ufrj:carregar_datasets"/>
+    <prov:entity prov:ref="cvm-dre-itr:itr_cia_aberta_DRE_con_2012.csv"/>
+  </prov:used>
+  <prov:used>
+    <prov:activity prov:ref="ufrj:carregar_datasets"/>
+    <prov:entity prov:ref="cvm-dre-itr:itr_cia_aberta_DRE_con_2013.csv"/>
+  </prov:used>
+  <prov:used>
+    <prov:activity prov:ref="ufrj:carregar_datasets"/>
+    <prov:entity prov:ref="cvm-dre-itr:itr_cia_aberta_DRE_con_2014.csv"/>
+  </prov:used>
+  <prov:used>
+    <prov:activity prov:ref="ufrj:carregar_datasets"/>
+    <prov:entity prov:ref="cvm-dre-itr:itr_cia_aberta_DRE_con_2015.csv"/>
+  </prov:used>
+  <prov:used>
+    <prov:activity prov:ref="ufrj:carregar_datasets"/>
+    <prov:entity prov:ref="cvm-dre-itr:itr_cia_aberta_DRE_con_2016.csv"/>
+  </prov:used>
+  <prov:used>
+    <prov:activity prov:ref="ufrj:carregar_datasets"/>
+    <prov:entity prov:ref="cvm-dre-itr:itr_cia_aberta_DRE_con_2017.csv"/>
+  </prov:used>
+  <prov:used>
+    <prov:activity prov:ref="ufrj:carregar_datasets"/>
+    <prov:entity prov:ref="cvm-dre-itr:itr_cia_aberta_DRE_con_2018.csv"/>
+  </prov:used>
+  <prov:used>
+    <prov:activity prov:ref="ufrj:carregar_datasets"/>
+    <prov:entity prov:ref="cvm-dre-itr:itr_cia_aberta_DRE_con_2019.csv"/>
+  </prov:used>
+  <prov:used>
+    <prov:activity prov:ref="ufrj:carregar_datasets"/>
+    <prov:entity prov:ref="cvm-dre-itr:itr_cia_aberta_DRE_con_2020.csv"/>
+  </prov:used>
+  <prov:used>
+    <prov:activity prov:ref="ufrj:carregar_datasets"/>
+    <prov:entity prov:ref="cvm-dre-itr:itr_cia_aberta_DRE_con_2021.csv"/>
+  </prov:used>
+  <prov:used>
+    <prov:activity prov:ref="ufrj:carregar_datasets"/>
+    <prov:entity prov:ref="cvm-dre-dfp:dfp_cia_aberta_DRE_con_2011.csv"/>
+  </prov:used>
+  <prov:used>
+    <prov:activity prov:ref="ufrj:carregar_datasets"/>
+    <prov:entity prov:ref="cvm-dre-dfp:dfp_cia_aberta_DRE_con_2012.csv"/>
+  </prov:used>
+  <prov:used>
+    <prov:activity prov:ref="ufrj:carregar_datasets"/>
+    <prov:entity prov:ref="cvm-dre-dfp:dfp_cia_aberta_DRE_con_2013.csv"/>
+  </prov:used>
+  <prov:used>
+    <prov:activity prov:ref="ufrj:carregar_datasets"/>
+    <prov:entity prov:ref="cvm-dre-dfp:dfp_cia_aberta_DRE_con_2014.csv"/>
+  </prov:used>
+  <prov:used>
+    <prov:activity prov:ref="ufrj:carregar_datasets"/>
+    <prov:entity prov:ref="cvm-dre-dfp:dfp_cia_aberta_DRE_con_2015.csv"/>
+  </prov:used>
+  <prov:used>
+    <prov:activity prov:ref="ufrj:carregar_datasets"/>
+    <prov:entity prov:ref="cvm-dre-dfp:dfp_cia_aberta_DRE_con_2016.csv"/>
+  </prov:used>
+  <prov:used>
+    <prov:activity prov:ref="ufrj:carregar_datasets"/>
+    <prov:entity prov:ref="cvm-dre-dfp:dfp_cia_aberta_DRE_con_2017.csv"/>
+  </prov:used>
+  <prov:used>
+    <prov:activity prov:ref="ufrj:carregar_datasets"/>
+    <prov:entity prov:ref="cvm-dre-dfp:dfp_cia_aberta_DRE_con_2018.csv"/>
+  </prov:used>
+  <prov:used>
+    <prov:activity prov:ref="ufrj:carregar_datasets"/>
+    <prov:entity prov:ref="cvm-dre-dfp:dfp_cia_aberta_DRE_con_2019.csv"/>
+  </prov:used>
+  <prov:used>
+    <prov:activity prov:ref="ufrj:carregar_datasets"/>
+    <prov:entity prov:ref="cvm-dre-dfp:dfp_cia_aberta_DRE_con_2020.csv"/>
+  </prov:used>
+  <prov:used>
+    <prov:activity prov:ref="ufrj:carregar_datasets"/>
+    <prov:entity prov:ref="cvm-dre-dfp:dfp_cia_aberta_DRE_con_2021.csv"/>
+  </prov:used>
+  <prov:entity prov:id="obinvest:df_cia">
+    <prov:label>Dataframe com dados das empresas</prov:label>
+    <prov:generatedAtTime>2022-09-26 01:30:01.070862</prov:generatedAtTime>
+  </prov:entity>
+  <prov:entity prov:id="obinvest:df_itr">
+    <prov:label>Dataframe com dados das DREs trimestrais</prov:label>
+    <prov:generatedAtTime>2022-09-26 01:30:01.070862</prov:generatedAtTime>
+  </prov:entity>
+  <prov:entity prov:id="obinvest:df_dfp">
+    <prov:label>Dataframe com dados das DREs anuais</prov:label>
+    <prov:generatedAtTime>2022-09-26 01:30:01.070862</prov:generatedAtTime>
+  </prov:entity>
+  <prov:wasGeneratedBy>
+    <prov:entity prov:ref="obinvest:df_cia"/>
+    <prov:activity prov:ref="ufrj:carregar_datasets"/>
+  </prov:wasGeneratedBy>
+  <prov:wasGeneratedBy>
+    <prov:entity prov:ref="obinvest:df_itr"/>
+    <prov:activity prov:ref="ufrj:carregar_datasets"/>
+  </prov:wasGeneratedBy>
+  <prov:wasGeneratedBy>
+    <prov:entity prov:ref="obinvest:df_dfp"/>
+    <prov:activity prov:ref="ufrj:carregar_datasets"/>
+  </prov:wasGeneratedBy>
+  <prov:activity prov:id="ufrj:adiciona_ano_dres">
+    <prov:startTime>2022-09-26T01:30:01.072180</prov:startTime>
+    <prov:endTime>2022-09-26T01:30:04.207519</prov:endTime>
+  </prov:activity>
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="ufrj:adiciona_ano_dres"/>
+    <prov:agent prov:ref="ufrj:drecvm.ipynb"/>
+  </prov:wasAssociatedWith>
+  <prov:used>
+    <prov:activity prov:ref="ufrj:adiciona_ano_dres"/>
+    <prov:entity prov:ref="obinvest:df_itr"/>
+  </prov:used>
+  <prov:used>
+    <prov:activity prov:ref="ufrj:adiciona_ano_dres"/>
+    <prov:entity prov:ref="obinvest:df_dfp"/>
+  </prov:used>
+  <prov:entity prov:id="obinvest:df_itr_ano">
+    <prov:label>Dataframe com dados das DREs trimestrais, adicionada a coluna ano</prov:label>
+    <prov:generatedAtTime>2022-09-26 01:30:04.207519</prov:generatedAtTime>
+  </prov:entity>
+  <prov:entity prov:id="obinvest:df_dfp_ano">
+    <prov:label>Dataframe com dados das DREs anuais, adicionada a coluna ano</prov:label>
+    <prov:generatedAtTime>2022-09-26 01:30:04.207519</prov:generatedAtTime>
+  </prov:entity>
+  <prov:wasGeneratedBy>
+    <prov:entity prov:ref="obinvest:df_itr_ano"/>
+    <prov:activity prov:ref="ufrj:adiciona_ano_dres"/>
+  </prov:wasGeneratedBy>
+  <prov:wasGeneratedBy>
+    <prov:entity prov:ref="obinvest:df_dfp_ano"/>
+    <prov:activity prov:ref="ufrj:adiciona_ano_dres"/>
+  </prov:wasGeneratedBy>
+  <prov:activity prov:id="ufrj:trata_dados_companhias">
+    <prov:startTime>2022-09-26T01:30:04.208138</prov:startTime>
+    <prov:endTime>2022-09-26T01:30:04.213401</prov:endTime>
+  </prov:activity>
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="ufrj:trata_dados_companhias"/>
+    <prov:agent prov:ref="ufrj:drecvm.ipynb"/>
+  </prov:wasAssociatedWith>
+  <prov:used>
+    <prov:activity prov:ref="ufrj:trata_dados_companhias"/>
+    <prov:entity prov:ref="obinvest:df_cia"/>
+  </prov:used>
+  <prov:entity prov:id="obinvest:df_cia_tratado">
+    <prov:label>Dataframe com dados das empresas ativas, apenas com os campos necessarios</prov:label>
+    <prov:generatedAtTime>2022-09-26 01:30:04.213401</prov:generatedAtTime>
+  </prov:entity>
+  <prov:wasGeneratedBy>
+    <prov:entity prov:ref="obinvest:df_cia_tratado"/>
+    <prov:activity prov:ref="ufrj:trata_dados_companhias"/>
+  </prov:wasGeneratedBy>
+  <prov:activity prov:id="ufrj:merge_dre_itr_setor">
+    <prov:startTime>2022-09-26T01:30:04.213768</prov:startTime>
+    <prov:endTime>2022-09-26T01:30:04.520930</prov:endTime>
+  </prov:activity>
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="ufrj:merge_dre_itr_setor"/>
+    <prov:agent prov:ref="ufrj:drecvm.ipynb"/>
+  </prov:wasAssociatedWith>
+  <prov:used>
+    <prov:activity prov:ref="ufrj:merge_dre_itr_setor"/>
+    <prov:entity prov:ref="obinvest:df_itr_ano"/>
+  </prov:used>
+  <prov:used>
+    <prov:activity prov:ref="ufrj:merge_dre_itr_setor"/>
+    <prov:entity prov:ref="obinvest:df_cia_tratado"/>
+  </prov:used>
+  <prov:entity prov:id="obinvest:df_itr_setor">
+    <prov:label>Dataframe com dados das DREs trimestrais, adicionado o campo de setor da empresa</prov:label>
+    <prov:generatedAtTime>2022-09-26 01:30:04.520930</prov:generatedAtTime>
+  </prov:entity>
+  <prov:wasGeneratedBy>
+    <prov:entity prov:ref="obinvest:df_itr_setor"/>
+    <prov:activity prov:ref="ufrj:merge_dre_itr_setor"/>
+  </prov:wasGeneratedBy>
+  <prov:activity prov:id="ufrj:obter_trimestres_123">
+    <prov:startTime>2022-09-26T01:30:04.521195</prov:startTime>
+    <prov:endTime>2022-09-26T01:30:04.668899</prov:endTime>
+  </prov:activity>
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="ufrj:obter_trimestres_123"/>
+    <prov:agent prov:ref="ufrj:drecvm.ipynb"/>
+  </prov:wasAssociatedWith>
+  <prov:used>
+    <prov:activity prov:ref="ufrj:obter_trimestres_123"/>
+    <prov:entity prov:ref="obinvest:df_itr_setor"/>
+  </prov:used>
+  <prov:entity prov:id="obinvest:df_trim123">
+    <prov:label>Dataframe com dados das DREs trimestrais dos trimestres 1, 2 e 3</prov:label>
+    <prov:generatedAtTime>2022-09-26 01:30:04.668899</prov:generatedAtTime>
+  </prov:entity>
+  <prov:wasGeneratedBy>
+    <prov:entity prov:ref="obinvest:df_trim123"/>
+    <prov:activity prov:ref="ufrj:obter_trimestres_123"/>
+  </prov:wasGeneratedBy>
+  <prov:activity prov:id="ufrj:obter_acumulado_trim3">
+    <prov:startTime>2022-09-26T01:30:04.673201</prov:startTime>
+    <prov:endTime>2022-09-26T01:30:04.768753</prov:endTime>
+  </prov:activity>
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="ufrj:obter_acumulado_trim3"/>
+    <prov:agent prov:ref="ufrj:drecvm.ipynb"/>
+  </prov:wasAssociatedWith>
+  <prov:used>
+    <prov:activity prov:ref="ufrj:obter_acumulado_trim3"/>
+    <prov:entity prov:ref="obinvest:df_itr_setor"/>
+  </prov:used>
+  <prov:entity prov:id="obinvest:df_acm3">
+    <prov:label>Dataframe com valores das DREs acumuladas dos tres primeiros trimestres</prov:label>
+    <prov:generatedAtTime>2022-09-26 01:30:04.768753</prov:generatedAtTime>
+  </prov:entity>
+  <prov:wasGeneratedBy>
+    <prov:entity prov:ref="obinvest:df_acm3"/>
+    <prov:activity prov:ref="ufrj:obter_acumulado_trim3"/>
+  </prov:wasGeneratedBy>
+  <prov:activity prov:id="ufrj:filtrar_ultimo_exerc_dfp">
+    <prov:startTime>2022-09-26T01:30:04.768977</prov:startTime>
+    <prov:endTime>2022-09-26T01:30:04.790919</prov:endTime>
+  </prov:activity>
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="ufrj:filtrar_ultimo_exerc_dfp"/>
+    <prov:agent prov:ref="ufrj:drecvm.ipynb"/>
+  </prov:wasAssociatedWith>
+  <prov:used>
+    <prov:activity prov:ref="ufrj:filtrar_ultimo_exerc_dfp"/>
+    <prov:entity prov:ref="obinvest:df_dfp_ano"/>
+  </prov:used>
+  <prov:entity prov:id="obinvest:df_dfp_ultimo_exerc">
+    <prov:label>Dataframe com dados das DREs anuais apenas do ano relativo ao dataset</prov:label>
+    <prov:generatedAtTime>2022-09-26 01:30:04.790919</prov:generatedAtTime>
+  </prov:entity>
+  <prov:wasGeneratedBy>
+    <prov:entity prov:ref="obinvest:df_dfp_ultimo_exerc"/>
+    <prov:activity prov:ref="ufrj:filtrar_ultimo_exerc_dfp"/>
+  </prov:wasGeneratedBy>
+  <prov:activity prov:id="ufrj:merge_dre_dfp_setor">
+    <prov:startTime>2022-09-26T01:30:04.791292</prov:startTime>
+    <prov:endTime>2022-09-26T01:30:04.814799</prov:endTime>
+  </prov:activity>
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="ufrj:merge_dre_dfp_setor"/>
+    <prov:agent prov:ref="ufrj:drecvm.ipynb"/>
+  </prov:wasAssociatedWith>
+  <prov:used>
+    <prov:activity prov:ref="ufrj:merge_dre_dfp_setor"/>
+    <prov:entity prov:ref="obinvest:df_dfp_ultimo_exerc"/>
+  </prov:used>
+  <prov:used>
+    <prov:activity prov:ref="ufrj:merge_dre_dfp_setor"/>
+    <prov:entity prov:ref="obinvest:df_cia_tratado"/>
+  </prov:used>
+  <prov:entity prov:id="obinvest:df_dfp_setor">
+    <prov:label>Dataframe com dados das DREs anuais, adicionado o campo de setor da empresa</prov:label>
+    <prov:generatedAtTime>2022-09-26 01:30:04.814799</prov:generatedAtTime>
+  </prov:entity>
+  <prov:wasGeneratedBy>
+    <prov:entity prov:ref="obinvest:df_dfp_setor"/>
+    <prov:activity prov:ref="ufrj:merge_dre_dfp_setor"/>
+  </prov:wasGeneratedBy>
+  <prov:activity prov:id="ufrj:obter_trimestre_4">
+    <prov:startTime>2022-09-26T01:30:04.815040</prov:startTime>
+    <prov:endTime>2022-09-26T01:30:04.872443</prov:endTime>
+  </prov:activity>
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="ufrj:merge_dre_dfp_setor"/>
+    <prov:agent prov:ref="ufrj:drecvm.ipynb"/>
+  </prov:wasAssociatedWith>
+  <prov:used>
+    <prov:activity prov:ref="ufrj:obter_trimestre_4"/>
+    <prov:entity prov:ref="obinvest:df_dfp_setor"/>
+  </prov:used>
+  <prov:used>
+    <prov:activity prov:ref="ufrj:obter_trimestre_4"/>
+    <prov:entity prov:ref="obinvest:df_acm3"/>
+  </prov:used>
+  <prov:entity prov:id="obinvest:df_trim4">
+    <prov:label>Dataframe com dados das DREs do 4 trimestre, subtraindo DFP anual pelo acumulado dos tres primeiros</prov:label>
+    <prov:generatedAtTime>2022-09-26 01:30:04.872443</prov:generatedAtTime>
+  </prov:entity>
+  <prov:wasGeneratedBy>
+    <prov:entity prov:ref="obinvest:df_trim4"/>
+    <prov:activity prov:ref="ufrj:obter_trimestre_4"/>
+  </prov:wasGeneratedBy>
+  <prov:activity prov:id="ufrj:concatena_trimestres">
+    <prov:startTime>2022-09-26T01:30:04.874519</prov:startTime>
+    <prov:endTime>2022-09-26T01:30:04.887006</prov:endTime>
+  </prov:activity>
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="ufrj:concatena_trimestres"/>
+    <prov:agent prov:ref="ufrj:drecvm.ipynb"/>
+  </prov:wasAssociatedWith>
+  <prov:used>
+    <prov:activity prov:ref="ufrj:concatena_trimestres"/>
+    <prov:entity prov:ref="obinvest:df_trim4"/>
+  </prov:used>
+  <prov:used>
+    <prov:activity prov:ref="ufrj:concatena_trimestres"/>
+    <prov:entity prov:ref="obinvest:df_trim123"/>
+  </prov:used>
+  <prov:entity prov:id="obinvest:df_trim1234">
+    <prov:label>Dataframe com dados das DREs de todos os trimestres</prov:label>
+    <prov:generatedAtTime>2022-09-26 01:30:04.887006</prov:generatedAtTime>
+  </prov:entity>
+  <prov:wasGeneratedBy>
+    <prov:entity prov:ref="obinvest:df_trim1234"/>
+    <prov:activity prov:ref="ufrj:concatena_trimestres"/>
+  </prov:wasGeneratedBy>
+  <prov:activity prov:id="ufrj:remove_registros_duplicados">
+    <prov:startTime>2022-09-26T01:30:04.887443</prov:startTime>
+    <prov:endTime>2022-09-26T01:30:04.959970</prov:endTime>
+  </prov:activity>
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="ufrj:remove_registros_duplicados"/>
+    <prov:agent prov:ref="ufrj:drecvm.ipynb"/>
+  </prov:wasAssociatedWith>
+  <prov:used>
+    <prov:activity prov:ref="ufrj:remove_registros_duplicados"/>
+    <prov:entity prov:ref="obinvest:df_trim1234"/>
+  </prov:used>
+  <prov:entity prov:id="obinvest:df_obinvest_tratado">
+    <prov:label>Dataframe com valores das DREs acumuladas dos tres primeiros trimestres</prov:label>
+    <prov:generatedAtTime>2022-09-26 01:30:04.959970</prov:generatedAtTime>
+  </prov:entity>
+  <prov:wasGeneratedBy>
+    <prov:entity prov:ref="obinvest:df_obinvest_tratado"/>
+    <prov:activity prov:ref="ufrj:remove_registros_duplicados"/>
+  </prov:wasGeneratedBy>
+  <prov:activity prov:id="ufrj:adiciona_campo_trimestre">
+    <prov:startTime>2022-09-26T01:30:04.960342</prov:startTime>
+    <prov:endTime>2022-09-26T01:30:06.188495</prov:endTime>
+  </prov:activity>
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="ufrj:adiciona_campo_trimestre"/>
+    <prov:agent prov:ref="ufrj:drecvm.ipynb"/>
+  </prov:wasAssociatedWith>
+  <prov:used>
+    <prov:activity prov:ref="ufrj:adiciona_campo_trimestre"/>
+    <prov:entity prov:ref="obinvest:df_obinvest_tratado"/>
+  </prov:used>
+  <prov:entity prov:id="obinvest:df_obinvest_campo_trimestre">
+    <prov:label>Dataframe com dados das DREs trimestrais, adicionada a coluna trimestre</prov:label>
+    <prov:generatedAtTime>2022-09-26 01:30:06.188495</prov:generatedAtTime>
+  </prov:entity>
+  <prov:wasGeneratedBy>
+    <prov:entity prov:ref="obinvest:df_obinvest_campo_trimestre"/>
+    <prov:activity prov:ref="ufrj:adiciona_campo_trimestre"/>
+  </prov:wasGeneratedBy>
+  <prov:activity prov:id="ufrj:padronizacao_valor_conta">
+    <prov:startTime>2022-09-26T01:30:06.189114</prov:startTime>
+    <prov:endTime>2022-09-26T01:30:10.554571</prov:endTime>
+  </prov:activity>
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="ufrj:padronizacao_valor_conta"/>
+    <prov:agent prov:ref="ufrj:drecvm.ipynb"/>
+  </prov:wasAssociatedWith>
+  <prov:used>
+    <prov:activity prov:ref="ufrj:padronizacao_valor_conta"/>
+    <prov:entity prov:ref="obinvest:df_obinvest_campo_trimestre"/>
+  </prov:used>
+  <prov:entity prov:id="obinvest:df_obinvest">
+    <prov:label>Dataframe final com dados das DREs trimestrais</prov:label>
+    <prov:generatedAtTime>2022-09-26 01:30:10.554571</prov:generatedAtTime>
+  </prov:entity>
+  <prov:wasGeneratedBy>
+    <prov:entity prov:ref="obinvest:df_obinvest"/>
+    <prov:activity prov:ref="ufrj:padronizacao_valor_conta"/>
+  </prov:wasGeneratedBy>
+  <prov:activity prov:id="ufrj:cria_dataset_obinvest">
+    <prov:startTime>2022-09-26T01:30:10.554791</prov:startTime>
+    <prov:endTime>2022-09-26T01:30:14.656528</prov:endTime>
+  </prov:activity>
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="ufrj:cria_dataset_obinvest"/>
+    <prov:agent prov:ref="ufrj:drecvm.ipynb"/>
+  </prov:wasAssociatedWith>
+  <prov:used>
+    <prov:activity prov:ref="ufrj:cria_dataset_obinvest"/>
+    <prov:entity prov:ref="obinvest:df_obinvest"/>
+  </prov:used>
+  <prov:entity prov:id="obinvest:ds_obinvest">
+    <prov:label>Dataset final com historico de dados das DREs trimestrais</prov:label>
+    <prov:type xsi:type="xsd:string">void:Dataset</prov:type>
+    <prov:generatedAtTime>2022-09-26 01:30:14.656528</prov:generatedAtTime>
+  </prov:entity>
+  <prov:wasGeneratedBy>
+    <prov:entity prov:ref="obinvest:ds_obinvest"/>
+    <prov:activity prov:ref="ufrj:cria_dataset_obinvest"/>
+  </prov:wasGeneratedBy>
+</prov:document>

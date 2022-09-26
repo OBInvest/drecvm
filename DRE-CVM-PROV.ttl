@@ -1,0 +1,552 @@
+@prefix cvm: <https://www.gov.br/cvm/pt-br> .
+@prefix cvm-cademp: <https://dados.cvm.gov.br/dados/CIA_ABERTA/CAD/DADOS/> .
+@prefix cvm-dre-dfp: <https://dados.cvm.gov.br/dados/CIA_ABERTA/DOC/DFP/DADOS/> .
+@prefix cvm-dre-itr: <https://dados.cvm.gov.br/dados/CIA_ABERTA/DOC/ITR/DADOS/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix obinvest: <https://www.obinvest.org> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ufrj: <https://www.ufrj.br> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cvm:trabalho-final a prov:Activity ;
+    prov:wasAssociatedWith ufrj:GRUPO2,
+        ufrj:MAI712,
+        ufrj:drecvm.ipynb .
+
+obinvest:ds_obinvest a prov:Entity,
+        "void:Dataset"^^xsd:string ;
+    rdfs:label "Dataset final com historico de dados das DREs trimestrais"^^xsd:string ;
+    prov:generatedAtTime "2022-09-26 01:30:14.656528"^^xsd:string ;
+    prov:wasGeneratedBy ufrj:cria_dataset_obinvest .
+
+ufrj:Gil a prov:Agent,
+        "prov:Person"^^xsd:string ;
+    prov:actedOnBehalfOf ufrj:GRUPO2 ;
+    foaf:mbox "sauloandrade@gmail.com"^^xsd:string ;
+    foaf:name "Saulo Andrade Almeida"^^xsd:string .
+
+ufrj:Saulo a prov:Agent,
+        "prov:Person"^^xsd:string ;
+    prov:actedOnBehalfOf ufrj:GRUPO2 ;
+    foaf:mbox "gilbertogilfgp@gmail.com"^^xsd:string ;
+    foaf:name "Gilberto Gil Fidelis Gomes Passos"^^xsd:string .
+
+ufrj:Valquire a prov:Agent,
+        "prov:Person"^^xsd:string ;
+    prov:actedOnBehalfOf ufrj:GRUPO2 ;
+    foaf:mbox "valquirej@gmail.com"^^xsd:string ;
+    foaf:name "Valquire da Silva de Jesus"^^xsd:string .
+
+cvm-dre-dfp:dfp_cia_aberta_2011.zip a prov:Entity,
+        "foaf:Document"^^xsd:string ;
+    rdfs:label "ZIP com Dataset com DRE anual de 2011"^^xsd:string ;
+    prov:wasDerivedFrom cvm:dre-dfp .
+
+cvm-dre-dfp:dfp_cia_aberta_2012.zip a prov:Entity,
+        "foaf:Document"^^xsd:string ;
+    rdfs:label "ZIP com Dataset com DRE anual de 2012"^^xsd:string ;
+    prov:wasDerivedFrom cvm:dre-dfp .
+
+cvm-dre-dfp:dfp_cia_aberta_2013.zip a prov:Entity,
+        "foaf:Document"^^xsd:string ;
+    rdfs:label "ZIP com Dataset com DRE anual de 2013"^^xsd:string ;
+    prov:wasDerivedFrom cvm:dre-dfp .
+
+cvm-dre-dfp:dfp_cia_aberta_2014.zip a prov:Entity,
+        "foaf:Document"^^xsd:string ;
+    rdfs:label "ZIP com Dataset com DRE anual de 2014"^^xsd:string ;
+    prov:wasDerivedFrom cvm:dre-dfp .
+
+cvm-dre-dfp:dfp_cia_aberta_2015.zip a prov:Entity,
+        "foaf:Document"^^xsd:string ;
+    rdfs:label "ZIP com Dataset com DRE anual de 2015"^^xsd:string ;
+    prov:wasDerivedFrom cvm:dre-dfp .
+
+cvm-dre-dfp:dfp_cia_aberta_2016.zip a prov:Entity,
+        "foaf:Document"^^xsd:string ;
+    rdfs:label "ZIP com Dataset com DRE anual de 2016"^^xsd:string ;
+    prov:wasDerivedFrom cvm:dre-dfp .
+
+cvm-dre-dfp:dfp_cia_aberta_2017.zip a prov:Entity,
+        "foaf:Document"^^xsd:string ;
+    rdfs:label "ZIP com Dataset com DRE anual de 2017"^^xsd:string ;
+    prov:wasDerivedFrom cvm:dre-dfp .
+
+cvm-dre-dfp:dfp_cia_aberta_2018.zip a prov:Entity,
+        "foaf:Document"^^xsd:string ;
+    rdfs:label "ZIP com Dataset com DRE anual de 2018"^^xsd:string ;
+    prov:wasDerivedFrom cvm:dre-dfp .
+
+cvm-dre-dfp:dfp_cia_aberta_2019.zip a prov:Entity,
+        "foaf:Document"^^xsd:string ;
+    rdfs:label "ZIP com Dataset com DRE anual de 2019"^^xsd:string ;
+    prov:wasDerivedFrom cvm:dre-dfp .
+
+cvm-dre-dfp:dfp_cia_aberta_2020.zip a prov:Entity,
+        "foaf:Document"^^xsd:string ;
+    rdfs:label "ZIP com Dataset com DRE anual de 2020"^^xsd:string ;
+    prov:wasDerivedFrom cvm:dre-dfp .
+
+cvm-dre-dfp:dfp_cia_aberta_2021.zip a prov:Entity,
+        "foaf:Document"^^xsd:string ;
+    rdfs:label "ZIP com Dataset com DRE anual de 2021"^^xsd:string ;
+    prov:wasDerivedFrom cvm:dre-dfp .
+
+cvm-dre-itr:itr_cia_aberta_2011.zip a prov:Entity,
+        "foaf:Document"^^xsd:string ;
+    rdfs:label "ZIP com Dataset com DRE trimestrais, do ano de 2011"^^xsd:string ;
+    prov:wasDerivedFrom cvm:dre-itr .
+
+cvm-dre-itr:itr_cia_aberta_2012.zip a prov:Entity,
+        "foaf:Document"^^xsd:string ;
+    rdfs:label "ZIP com Dataset com DRE trimestrais, do ano de 2012"^^xsd:string ;
+    prov:wasDerivedFrom cvm:dre-itr .
+
+cvm-dre-itr:itr_cia_aberta_2013.zip a prov:Entity,
+        "foaf:Document"^^xsd:string ;
+    rdfs:label "ZIP com Dataset com DRE trimestrais, do ano de 2013"^^xsd:string ;
+    prov:wasDerivedFrom cvm:dre-itr .
+
+cvm-dre-itr:itr_cia_aberta_2014.zip a prov:Entity,
+        "foaf:Document"^^xsd:string ;
+    rdfs:label "ZIP com Dataset com DRE trimestrais, do ano de 2014"^^xsd:string ;
+    prov:wasDerivedFrom cvm:dre-itr .
+
+cvm-dre-itr:itr_cia_aberta_2015.zip a prov:Entity,
+        "foaf:Document"^^xsd:string ;
+    rdfs:label "ZIP com Dataset com DRE trimestrais, do ano de 2015"^^xsd:string ;
+    prov:wasDerivedFrom cvm:dre-itr .
+
+cvm-dre-itr:itr_cia_aberta_2016.zip a prov:Entity,
+        "foaf:Document"^^xsd:string ;
+    rdfs:label "ZIP com Dataset com DRE trimestrais, do ano de 2016"^^xsd:string ;
+    prov:wasDerivedFrom cvm:dre-itr .
+
+cvm-dre-itr:itr_cia_aberta_2017.zip a prov:Entity,
+        "foaf:Document"^^xsd:string ;
+    rdfs:label "ZIP com Dataset com DRE trimestrais, do ano de 2017"^^xsd:string ;
+    prov:wasDerivedFrom cvm:dre-itr .
+
+cvm-dre-itr:itr_cia_aberta_2018.zip a prov:Entity,
+        "foaf:Document"^^xsd:string ;
+    rdfs:label "ZIP com Dataset com DRE trimestrais, do ano de 2018"^^xsd:string ;
+    prov:wasDerivedFrom cvm:dre-itr .
+
+cvm-dre-itr:itr_cia_aberta_2019.zip a prov:Entity,
+        "foaf:Document"^^xsd:string ;
+    rdfs:label "ZIP com Dataset com DRE trimestrais, do ano de 2019"^^xsd:string ;
+    prov:wasDerivedFrom cvm:dre-itr .
+
+cvm-dre-itr:itr_cia_aberta_2020.zip a prov:Entity,
+        "foaf:Document"^^xsd:string ;
+    rdfs:label "ZIP com Dataset com DRE trimestrais, do ano de 2020"^^xsd:string ;
+    prov:wasDerivedFrom cvm:dre-itr .
+
+cvm-dre-itr:itr_cia_aberta_2021.zip a prov:Entity,
+        "foaf:Document"^^xsd:string ;
+    rdfs:label "ZIP com Dataset com DRE trimestrais, do ano de 2021"^^xsd:string ;
+    prov:wasDerivedFrom cvm:dre-itr .
+
+cvm:CVM a prov:Agent,
+        "prov:Organization"^^xsd:string ;
+    foaf:name "Comissão de Valores Mobiliários"^^xsd:string .
+
+obinvest:df_acm3 a prov:Entity ;
+    rdfs:label "Dataframe com valores das DREs acumuladas dos tres primeiros trimestres"^^xsd:string ;
+    prov:generatedAtTime "2022-09-26 01:30:04.768753"^^xsd:string ;
+    prov:wasGeneratedBy ufrj:obter_acumulado_trim3 .
+
+obinvest:df_cia a prov:Entity ;
+    rdfs:label "Dataframe com dados das empresas"^^xsd:string ;
+    prov:generatedAtTime "2022-09-26 01:30:01.070862"^^xsd:string ;
+    prov:wasGeneratedBy ufrj:carregar_datasets .
+
+obinvest:df_dfp a prov:Entity ;
+    rdfs:label "Dataframe com dados das DREs anuais"^^xsd:string ;
+    prov:generatedAtTime "2022-09-26 01:30:01.070862"^^xsd:string ;
+    prov:wasGeneratedBy ufrj:carregar_datasets .
+
+obinvest:df_dfp_ano a prov:Entity ;
+    rdfs:label "Dataframe com dados das DREs anuais, adicionada a coluna ano"^^xsd:string ;
+    prov:generatedAtTime "2022-09-26 01:30:04.207519"^^xsd:string ;
+    prov:wasGeneratedBy ufrj:adiciona_ano_dres .
+
+obinvest:df_dfp_setor a prov:Entity ;
+    rdfs:label "Dataframe com dados das DREs anuais, adicionado o campo de setor da empresa"^^xsd:string ;
+    prov:generatedAtTime "2022-09-26 01:30:04.814799"^^xsd:string ;
+    prov:wasGeneratedBy ufrj:merge_dre_dfp_setor .
+
+obinvest:df_dfp_ultimo_exerc a prov:Entity ;
+    rdfs:label "Dataframe com dados das DREs anuais apenas do ano relativo ao dataset"^^xsd:string ;
+    prov:generatedAtTime "2022-09-26 01:30:04.790919"^^xsd:string ;
+    prov:wasGeneratedBy ufrj:filtrar_ultimo_exerc_dfp .
+
+obinvest:df_itr a prov:Entity ;
+    rdfs:label "Dataframe com dados das DREs trimestrais"^^xsd:string ;
+    prov:generatedAtTime "2022-09-26 01:30:01.070862"^^xsd:string ;
+    prov:wasGeneratedBy ufrj:carregar_datasets .
+
+obinvest:df_itr_ano a prov:Entity ;
+    rdfs:label "Dataframe com dados das DREs trimestrais, adicionada a coluna ano"^^xsd:string ;
+    prov:generatedAtTime "2022-09-26 01:30:04.207519"^^xsd:string ;
+    prov:wasGeneratedBy ufrj:adiciona_ano_dres .
+
+obinvest:df_obinvest a prov:Entity ;
+    rdfs:label "Dataframe final com dados das DREs trimestrais"^^xsd:string ;
+    prov:generatedAtTime "2022-09-26 01:30:10.554571"^^xsd:string ;
+    prov:wasGeneratedBy ufrj:padronizacao_valor_conta .
+
+obinvest:df_obinvest_campo_trimestre a prov:Entity ;
+    rdfs:label "Dataframe com dados das DREs trimestrais, adicionada a coluna trimestre"^^xsd:string ;
+    prov:generatedAtTime "2022-09-26 01:30:06.188495"^^xsd:string ;
+    prov:wasGeneratedBy ufrj:adiciona_campo_trimestre .
+
+obinvest:df_obinvest_tratado a prov:Entity ;
+    rdfs:label "Dataframe com valores das DREs acumuladas dos tres primeiros trimestres"^^xsd:string ;
+    prov:generatedAtTime "2022-09-26 01:30:04.959970"^^xsd:string ;
+    prov:wasGeneratedBy ufrj:remove_registros_duplicados .
+
+obinvest:df_trim123 a prov:Entity ;
+    rdfs:label "Dataframe com dados das DREs trimestrais dos trimestres 1, 2 e 3"^^xsd:string ;
+    prov:generatedAtTime "2022-09-26 01:30:04.668899"^^xsd:string ;
+    prov:wasGeneratedBy ufrj:obter_trimestres_123 .
+
+obinvest:df_trim1234 a prov:Entity ;
+    rdfs:label "Dataframe com dados das DREs de todos os trimestres"^^xsd:string ;
+    prov:generatedAtTime "2022-09-26 01:30:04.887006"^^xsd:string ;
+    prov:wasGeneratedBy ufrj:concatena_trimestres .
+
+obinvest:df_trim4 a prov:Entity ;
+    rdfs:label "Dataframe com dados das DREs do 4 trimestre, subtraindo DFP anual pelo acumulado dos tres primeiros"^^xsd:string ;
+    prov:generatedAtTime "2022-09-26 01:30:04.872443"^^xsd:string ;
+    prov:wasGeneratedBy ufrj:obter_trimestre_4 .
+
+ufrj:PPGI a prov:Agent,
+        "prov:Organization"^^xsd:string ;
+    prov:actedOnBehalfOf ufrj:UFRJ ;
+    foaf:name "Programa de Pós Graduação em Informática"^^xsd:string .
+
+ufrj:UFRJ a prov:Agent,
+        "prov:Organization"^^xsd:string ;
+    foaf:name "Universidade Federal do Rio de Janeiro"^^xsd:string .
+
+ufrj:adiciona_campo_trimestre a prov:Activity ;
+    prov:endedAtTime "2022-09-26T01:30:06.188495"^^xsd:dateTime ;
+    prov:startedAtTime "2022-09-26T01:30:04.960342"^^xsd:dateTime ;
+    prov:used obinvest:df_obinvest_tratado ;
+    prov:wasAssociatedWith ufrj:drecvm.ipynb .
+
+ufrj:armazenar-datasets a prov:Activity ;
+    prov:startedAtTime "2022-09-15T00:00:00"^^xsd:dateTime ;
+    prov:used cvm-cademp:cad_cia_aberta.csv,
+        cvm-dre-dfp:dfp_cia_aberta_DRE_con_2011.csv,
+        cvm-dre-dfp:dfp_cia_aberta_DRE_con_2012.csv,
+        cvm-dre-dfp:dfp_cia_aberta_DRE_con_2013.csv,
+        cvm-dre-dfp:dfp_cia_aberta_DRE_con_2014.csv,
+        cvm-dre-dfp:dfp_cia_aberta_DRE_con_2015.csv,
+        cvm-dre-dfp:dfp_cia_aberta_DRE_con_2016.csv,
+        cvm-dre-dfp:dfp_cia_aberta_DRE_con_2017.csv,
+        cvm-dre-dfp:dfp_cia_aberta_DRE_con_2018.csv,
+        cvm-dre-dfp:dfp_cia_aberta_DRE_con_2019.csv,
+        cvm-dre-dfp:dfp_cia_aberta_DRE_con_2020.csv,
+        cvm-dre-dfp:dfp_cia_aberta_DRE_con_2021.csv,
+        cvm-dre-itr:itr_cia_aberta_DRE_con_2011.csv,
+        cvm-dre-itr:itr_cia_aberta_DRE_con_2012.csv,
+        cvm-dre-itr:itr_cia_aberta_DRE_con_2013.csv,
+        cvm-dre-itr:itr_cia_aberta_DRE_con_2014.csv,
+        cvm-dre-itr:itr_cia_aberta_DRE_con_2015.csv,
+        cvm-dre-itr:itr_cia_aberta_DRE_con_2016.csv,
+        cvm-dre-itr:itr_cia_aberta_DRE_con_2017.csv,
+        cvm-dre-itr:itr_cia_aberta_DRE_con_2018.csv,
+        cvm-dre-itr:itr_cia_aberta_DRE_con_2019.csv,
+        cvm-dre-itr:itr_cia_aberta_DRE_con_2020.csv,
+        cvm-dre-itr:itr_cia_aberta_DRE_con_2021.csv ;
+    prov:wasAssociatedWith ufrj:GRUPO2 .
+
+ufrj:concatena_trimestres a prov:Activity ;
+    prov:endedAtTime "2022-09-26T01:30:04.887006"^^xsd:dateTime ;
+    prov:startedAtTime "2022-09-26T01:30:04.874519"^^xsd:dateTime ;
+    prov:used obinvest:df_trim123,
+        obinvest:df_trim4 ;
+    prov:wasAssociatedWith ufrj:drecvm.ipynb .
+
+ufrj:cria_dataset_obinvest a prov:Activity ;
+    prov:endedAtTime "2022-09-26T01:30:14.656528"^^xsd:dateTime ;
+    prov:startedAtTime "2022-09-26T01:30:10.554791"^^xsd:dateTime ;
+    prov:used obinvest:df_obinvest ;
+    prov:wasAssociatedWith ufrj:drecvm.ipynb .
+
+ufrj:filtrar_ultimo_exerc_dfp a prov:Activity ;
+    prov:endedAtTime "2022-09-26T01:30:04.790919"^^xsd:dateTime ;
+    prov:startedAtTime "2022-09-26T01:30:04.768977"^^xsd:dateTime ;
+    prov:used obinvest:df_dfp_ano ;
+    prov:wasAssociatedWith ufrj:drecvm.ipynb .
+
+ufrj:merge_dre_dfp_setor a prov:Activity ;
+    prov:endedAtTime "2022-09-26T01:30:04.814799"^^xsd:dateTime ;
+    prov:startedAtTime "2022-09-26T01:30:04.791292"^^xsd:dateTime ;
+    prov:used obinvest:df_cia_tratado,
+        obinvest:df_dfp_ultimo_exerc ;
+    prov:wasAssociatedWith ufrj:drecvm.ipynb .
+
+ufrj:merge_dre_itr_setor a prov:Activity ;
+    prov:endedAtTime "2022-09-26T01:30:04.520930"^^xsd:dateTime ;
+    prov:startedAtTime "2022-09-26T01:30:04.213768"^^xsd:dateTime ;
+    prov:used obinvest:df_cia_tratado,
+        obinvest:df_itr_ano ;
+    prov:wasAssociatedWith ufrj:drecvm.ipynb .
+
+ufrj:obter_acumulado_trim3 a prov:Activity ;
+    prov:endedAtTime "2022-09-26T01:30:04.768753"^^xsd:dateTime ;
+    prov:startedAtTime "2022-09-26T01:30:04.673201"^^xsd:dateTime ;
+    prov:used obinvest:df_itr_setor ;
+    prov:wasAssociatedWith ufrj:drecvm.ipynb .
+
+ufrj:obter_trimestre_4 a prov:Activity ;
+    prov:endedAtTime "2022-09-26T01:30:04.872443"^^xsd:dateTime ;
+    prov:startedAtTime "2022-09-26T01:30:04.815040"^^xsd:dateTime ;
+    prov:used obinvest:df_acm3,
+        obinvest:df_dfp_setor .
+
+ufrj:obter_trimestres_123 a prov:Activity ;
+    prov:endedAtTime "2022-09-26T01:30:04.668899"^^xsd:dateTime ;
+    prov:startedAtTime "2022-09-26T01:30:04.521195"^^xsd:dateTime ;
+    prov:used obinvest:df_itr_setor ;
+    prov:wasAssociatedWith ufrj:drecvm.ipynb .
+
+ufrj:padronizacao_valor_conta a prov:Activity ;
+    prov:endedAtTime "2022-09-26T01:30:10.554571"^^xsd:dateTime ;
+    prov:startedAtTime "2022-09-26T01:30:06.189114"^^xsd:dateTime ;
+    prov:used obinvest:df_obinvest_campo_trimestre ;
+    prov:wasAssociatedWith ufrj:drecvm.ipynb .
+
+ufrj:remove_registros_duplicados a prov:Activity ;
+    prov:endedAtTime "2022-09-26T01:30:04.959970"^^xsd:dateTime ;
+    prov:startedAtTime "2022-09-26T01:30:04.887443"^^xsd:dateTime ;
+    prov:used obinvest:df_trim1234 ;
+    prov:wasAssociatedWith ufrj:drecvm.ipynb .
+
+ufrj:trata_dados_companhias a prov:Activity ;
+    prov:endedAtTime "2022-09-26T01:30:04.213401"^^xsd:dateTime ;
+    prov:startedAtTime "2022-09-26T01:30:04.208138"^^xsd:dateTime ;
+    prov:used obinvest:df_cia ;
+    prov:wasAssociatedWith ufrj:drecvm.ipynb .
+
+cvm-cademp:cad_cia_aberta.csv a prov:Entity,
+        "void:Dataset"^^xsd:string ;
+    rdfs:label "Dataset com dados cadastrais das empresas listadas na CVM"^^xsd:string ;
+    prov:wasDerivedFrom obinvest:github-drecvm ;
+    prov:wasGeneratedBy cvm:criar-dataset .
+
+cvm-dre-dfp:dfp_cia_aberta_DRE_con_2011.csv a prov:Entity,
+        "void:Dataset"^^xsd:string ;
+    rdfs:label "Dataset com dados de DRE anual de 2011"^^xsd:string ;
+    prov:wasDerivedFrom cvm-dre-dfp:dfp_cia_aberta_2011.zip,
+        obinvest:github-drecvm .
+
+cvm-dre-dfp:dfp_cia_aberta_DRE_con_2012.csv a prov:Entity,
+        "void:Dataset"^^xsd:string ;
+    rdfs:label "Dataset com dados de DRE anual,  do anos de 2012"^^xsd:string ;
+    prov:wasDerivedFrom cvm-dre-dfp:dfp_cia_aberta_2012.zip,
+        obinvest:github-drecvm .
+
+cvm-dre-dfp:dfp_cia_aberta_DRE_con_2013.csv a prov:Entity,
+        "void:Dataset"^^xsd:string ;
+    rdfs:label "Dataset com dados de DRE anual de 2013"^^xsd:string ;
+    prov:wasDerivedFrom cvm-dre-dfp:dfp_cia_aberta_2013.zip,
+        obinvest:github-drecvm .
+
+cvm-dre-dfp:dfp_cia_aberta_DRE_con_2014.csv a prov:Entity,
+        "void:Dataset"^^xsd:string ;
+    rdfs:label "Dataset com dados de DRE anual,  do anos de 2014"^^xsd:string ;
+    prov:wasDerivedFrom cvm-dre-dfp:dfp_cia_aberta_2014.zip,
+        obinvest:github-drecvm .
+
+cvm-dre-dfp:dfp_cia_aberta_DRE_con_2015.csv a prov:Entity,
+        "void:Dataset"^^xsd:string ;
+    rdfs:label "Dataset com dados de DRE anual de 2015"^^xsd:string ;
+    prov:wasDerivedFrom cvm-dre-dfp:dfp_cia_aberta_2015.zip,
+        obinvest:github-drecvm .
+
+cvm-dre-dfp:dfp_cia_aberta_DRE_con_2016.csv a prov:Entity,
+        "void:Dataset"^^xsd:string ;
+    rdfs:label "Dataset com dados de DRE anual de 2016"^^xsd:string ;
+    prov:wasDerivedFrom cvm-dre-dfp:dfp_cia_aberta_2016.zip,
+        obinvest:github-drecvm .
+
+cvm-dre-dfp:dfp_cia_aberta_DRE_con_2017.csv a prov:Entity,
+        "void:Dataset"^^xsd:string ;
+    rdfs:label "Dataset com dados de DRE anual,  do anos de 2017"^^xsd:string ;
+    prov:wasDerivedFrom cvm-dre-dfp:dfp_cia_aberta_2017.zip,
+        obinvest:github-drecvm .
+
+cvm-dre-dfp:dfp_cia_aberta_DRE_con_2018.csv a prov:Entity,
+        "void:Dataset"^^xsd:string ;
+    rdfs:label "Dataset com dados de DRE anual de 2018"^^xsd:string ;
+    prov:wasDerivedFrom cvm-dre-dfp:dfp_cia_aberta_2018.zip,
+        obinvest:github-drecvm .
+
+cvm-dre-dfp:dfp_cia_aberta_DRE_con_2019.csv a prov:Entity,
+        "void:Dataset"^^xsd:string ;
+    rdfs:label "Dataset com dados de DRE anual de 2019"^^xsd:string ;
+    prov:wasDerivedFrom cvm-dre-dfp:dfp_cia_aberta_2019.zip,
+        obinvest:github-drecvm .
+
+cvm-dre-dfp:dfp_cia_aberta_DRE_con_2020.csv a prov:Entity,
+        "void:Dataset"^^xsd:string ;
+    rdfs:label "Dataset com dados de DRE anual de 2020"^^xsd:string ;
+    prov:wasDerivedFrom cvm-dre-dfp:dfp_cia_aberta_2020.zip,
+        obinvest:github-drecvm .
+
+cvm-dre-dfp:dfp_cia_aberta_DRE_con_2021.csv a prov:Entity,
+        "void:Dataset"^^xsd:string ;
+    rdfs:label "Dataset com dados de DRE anual de 2021"^^xsd:string ;
+    prov:wasDerivedFrom cvm-dre-dfp:dfp_cia_aberta_2021.zip,
+        obinvest:github-drecvm .
+
+cvm-dre-itr:itr_cia_aberta_DRE_con_2011.csv a prov:Entity,
+        "void:Dataset"^^xsd:string ;
+    rdfs:label "Dataset com dados de DRE trimestrais, do ano de 2011"^^xsd:string ;
+    prov:wasDerivedFrom cvm-dre-itr:itr_cia_aberta_2011.zip,
+        obinvest:github-drecvm .
+
+cvm-dre-itr:itr_cia_aberta_DRE_con_2012.csv a prov:Entity,
+        "void:Dataset"^^xsd:string ;
+    rdfs:label "Dataset com dados de DRE trimestrais,  do anos de 2012"^^xsd:string ;
+    prov:wasDerivedFrom cvm-dre-itr:itr_cia_aberta_2012.zip,
+        obinvest:github-drecvm .
+
+cvm-dre-itr:itr_cia_aberta_DRE_con_2013.csv a prov:Entity,
+        "void:Dataset"^^xsd:string ;
+    rdfs:label "Dataset com dados de DRE trimestrais, do ano de 2013"^^xsd:string ;
+    prov:wasDerivedFrom cvm-dre-itr:itr_cia_aberta_2013.zip,
+        obinvest:github-drecvm .
+
+cvm-dre-itr:itr_cia_aberta_DRE_con_2014.csv a prov:Entity,
+        "void:Dataset"^^xsd:string ;
+    rdfs:label "Dataset com dados de DRE trimestrais,  do anos de 2014"^^xsd:string ;
+    prov:wasDerivedFrom cvm-dre-itr:itr_cia_aberta_2014.zip,
+        obinvest:github-drecvm .
+
+cvm-dre-itr:itr_cia_aberta_DRE_con_2015.csv a prov:Entity,
+        "void:Dataset"^^xsd:string ;
+    rdfs:label "Dataset com dados de DRE trimestrais, do ano de 2015"^^xsd:string ;
+    prov:wasDerivedFrom cvm-dre-itr:itr_cia_aberta_2015.zip,
+        obinvest:github-drecvm .
+
+cvm-dre-itr:itr_cia_aberta_DRE_con_2016.csv a prov:Entity,
+        "void:Dataset"^^xsd:string ;
+    rdfs:label "Dataset com dados de DRE trimestrais, do ano de 2016"^^xsd:string ;
+    prov:wasDerivedFrom cvm-dre-itr:itr_cia_aberta_2016.zip,
+        obinvest:github-drecvm .
+
+cvm-dre-itr:itr_cia_aberta_DRE_con_2017.csv a prov:Entity,
+        "void:Dataset"^^xsd:string ;
+    rdfs:label "Dataset com dados de DRE trimestrais,  do anos de 2017"^^xsd:string ;
+    prov:wasDerivedFrom cvm-dre-itr:itr_cia_aberta_2017.zip,
+        obinvest:github-drecvm .
+
+cvm-dre-itr:itr_cia_aberta_DRE_con_2018.csv a prov:Entity,
+        "void:Dataset"^^xsd:string ;
+    rdfs:label "Dataset com dados de DRE trimestrais, do ano de 2018"^^xsd:string ;
+    prov:wasDerivedFrom cvm-dre-itr:itr_cia_aberta_2018.zip,
+        obinvest:github-drecvm .
+
+cvm-dre-itr:itr_cia_aberta_DRE_con_2019.csv a prov:Entity,
+        "void:Dataset"^^xsd:string ;
+    rdfs:label "Dataset com dados de DRE trimestrais,  do anos de 2019"^^xsd:string ;
+    prov:wasDerivedFrom cvm-dre-itr:itr_cia_aberta_2019.zip,
+        obinvest:github-drecvm .
+
+cvm-dre-itr:itr_cia_aberta_DRE_con_2020.csv a prov:Entity,
+        "void:Dataset"^^xsd:string ;
+    rdfs:label "Dataset com dados de DRE trimestrais, do ano de 2020"^^xsd:string ;
+    prov:wasDerivedFrom cvm-dre-itr:itr_cia_aberta_2020.zip,
+        obinvest:github-drecvm .
+
+cvm-dre-itr:itr_cia_aberta_DRE_con_2021.csv a prov:Entity,
+        "void:Dataset"^^xsd:string ;
+    rdfs:label "Dataset com dados de DRE trimestrais, do ano de 2021"^^xsd:string ;
+    prov:wasDerivedFrom cvm-dre-itr:itr_cia_aberta_2021.zip,
+        obinvest:github-drecvm .
+
+obinvest:df_cia_tratado a prov:Entity ;
+    rdfs:label "Dataframe com dados das empresas ativas, apenas com os campos necessarios"^^xsd:string ;
+    prov:generatedAtTime "2022-09-26 01:30:04.213401"^^xsd:string ;
+    prov:wasGeneratedBy ufrj:trata_dados_companhias .
+
+obinvest:df_itr_setor a prov:Entity ;
+    rdfs:label "Dataframe com dados das DREs trimestrais, adicionado o campo de setor da empresa"^^xsd:string ;
+    prov:generatedAtTime "2022-09-26 01:30:04.520930"^^xsd:string ;
+    prov:wasGeneratedBy ufrj:merge_dre_itr_setor .
+
+ufrj:MAI712 a prov:Agent,
+        "prov:Organization"^^xsd:string ;
+    prov:actedOnBehalfOf ufrj:PPGI ;
+    foaf:name "Disciplina de Fundamentos de Ciências de Dados"^^xsd:string .
+
+ufrj:adiciona_ano_dres a prov:Activity ;
+    prov:endedAtTime "2022-09-26T01:30:04.207519"^^xsd:dateTime ;
+    prov:startedAtTime "2022-09-26T01:30:01.072180"^^xsd:dateTime ;
+    prov:used obinvest:df_dfp,
+        obinvest:df_itr ;
+    prov:wasAssociatedWith ufrj:drecvm.ipynb .
+
+cvm:criar-dataset a prov:Activity ;
+    prov:wasAssociatedWith cvm:CVM .
+
+ufrj:carregar_datasets a prov:Activity ;
+    prov:endedAtTime "2022-09-26T01:30:01.070862"^^xsd:dateTime ;
+    prov:startedAtTime "2022-09-26T01:29:59.634542"^^xsd:dateTime ;
+    prov:used cvm-cademp:cad_cia_aberta.csv,
+        cvm-dre-dfp:dfp_cia_aberta_DRE_con_2011.csv,
+        cvm-dre-dfp:dfp_cia_aberta_DRE_con_2012.csv,
+        cvm-dre-dfp:dfp_cia_aberta_DRE_con_2013.csv,
+        cvm-dre-dfp:dfp_cia_aberta_DRE_con_2014.csv,
+        cvm-dre-dfp:dfp_cia_aberta_DRE_con_2015.csv,
+        cvm-dre-dfp:dfp_cia_aberta_DRE_con_2016.csv,
+        cvm-dre-dfp:dfp_cia_aberta_DRE_con_2017.csv,
+        cvm-dre-dfp:dfp_cia_aberta_DRE_con_2018.csv,
+        cvm-dre-dfp:dfp_cia_aberta_DRE_con_2019.csv,
+        cvm-dre-dfp:dfp_cia_aberta_DRE_con_2020.csv,
+        cvm-dre-dfp:dfp_cia_aberta_DRE_con_2021.csv,
+        cvm-dre-itr:itr_cia_aberta_DRE_con_2011.csv,
+        cvm-dre-itr:itr_cia_aberta_DRE_con_2012.csv,
+        cvm-dre-itr:itr_cia_aberta_DRE_con_2013.csv,
+        cvm-dre-itr:itr_cia_aberta_DRE_con_2014.csv,
+        cvm-dre-itr:itr_cia_aberta_DRE_con_2015.csv,
+        cvm-dre-itr:itr_cia_aberta_DRE_con_2016.csv,
+        cvm-dre-itr:itr_cia_aberta_DRE_con_2017.csv,
+        cvm-dre-itr:itr_cia_aberta_DRE_con_2018.csv,
+        cvm-dre-itr:itr_cia_aberta_DRE_con_2019.csv,
+        cvm-dre-itr:itr_cia_aberta_DRE_con_2020.csv,
+        cvm-dre-itr:itr_cia_aberta_DRE_con_2021.csv ;
+    prov:wasAssociatedWith ufrj:drecvm.ipynb .
+
+ufrj:GRUPO2 a prov:Agent,
+        "prov:Organization"^^xsd:string ;
+    prov:actedOnBehalfOf ufrj:MAI712 ;
+    foaf:name "Grupo 02 para o trabalho final"^^xsd:string .
+
+cvm:dre-dfp a prov:Entity,
+        "foaf:Document"^^xsd:string ;
+    rdfs:label "Documento que representa o conceito de DREs do tipo Trimestral"^^xsd:string ;
+    prov:wasGeneratedBy cvm:criar-dataset .
+
+cvm:dre-itr a prov:Entity,
+        "foaf:Document"^^xsd:string ;
+    rdfs:label "Documento que representa o conceito de DREs do tipo Trimestral"^^xsd:string ;
+    prov:wasGeneratedBy cvm:criar-dataset .
+
+ufrj:drecvm.ipynb a prov:Agent,
+        "prov:SoftwareAgent"^^xsd:string ;
+    rdfs:label "Notebook Python utilizado no trabalho"^^xsd:string ;
+    prov:actedOnBehalfOf ufrj:GRUPO2 ;
+    foaf:name "drecvm.ipynb"^^xsd:string .
+
+obinvest:github-drecvm a prov:Entity,
+        "prov:Collection"^^xsd:string ;
+    rdfs:label "Repositorio DRECVM da OBInvest"^^xsd:string ;
+    prov:wasGeneratedBy ufrj:armazenar-datasets .
+
