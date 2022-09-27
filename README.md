@@ -20,7 +20,7 @@ Ubuntu 22.04 + Docker V20.10.14 | OK
 ## Execucao rapida (diretamente do Docker Hub)
 1 - Rodar o docker com os dados da imagem já publicada no docker hub
 ```
-$ docker run -p 8888:8888 obinvest/drecvm:1.0
+$ docker run -p 8888:8888 obinvest/drecvm
 ```
 3 - Abrir no navegador da maquina host e acessar a URL do jupyter notbook
 
