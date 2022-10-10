@@ -1,6 +1,6 @@
 FROM continuumio/anaconda3:2022.05
 RUN apt-get update && apt-get install -y graphviz \ 
-    && git clone https://github.com/OBInvest/drecvm.git --branch=v1.1 /opt/drecvm \
+    && git clone https://github.com/OBInvest/drecvm.git --branch=v1.2 /opt/drecvm \
     && conda env create -f /opt/drecvm/environment.yml -q
 RUN echo "conda activate drecvmenv" >> ~/.bashrc
 SHELL ["/bin/bash", "--login", "-c"]
