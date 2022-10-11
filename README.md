@@ -1,14 +1,20 @@
 # drecvm - Dados de Resultados de Empresas de Capital Aberto obtidos da CVM.
-Repositório utilizado para o trabalho final da discplina Fundamentos de Data Science no Porograma de pós graduação em Informática (PPGI) da da UFRJ. 
+Repositório utilizado para o trabalho final da discplina Fundamentos de Data Science no Programa de pós graduação em Informática (PPGI) da da UFRJ. 
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7114963.svg)](https://doi.org/10.5281/zenodo.7114963)
 
+## Licença
+Este projeto está licenciado sob a licença Apache 2.0 - consulte o arquivo [LICENSE](LICENSE) para obter detalhes.
 
-### Pré-requisitos:
+## Resumo do Trabalho 
+
+### Como executar
+
+#### Pré-requisitos:
 
 Ter o Docker instalado para poder rodar o container no ambiente que será executado!
 
-### Plataformas testadas:
+#### Plataformas testadas:
 
 As seguintes plataformas foram testadas:
 
@@ -17,7 +23,7 @@ Plataforma | Resultado
 Windows 10 + Docker V19.03.8 | OK
 Ubuntu 22.04 + Docker V20.10.14 | OK
 
-## Execucao rapida (diretamente do Docker Hub)
+#### Execucao rapida (diretamente do Docker Hub)
 1 - Rodar o docker com os dados da imagem já publicada no docker hub
 ```
 $ docker run -p 8888:8888 obinvest/drecvm
@@ -26,7 +32,7 @@ $ docker run -p 8888:8888 obinvest/drecvm
 
 http://127.0.0.1:8888
 
-## Executando localmente from scratch
+### Executando localmente from scratch
 1 - Clonar esse repositório
 ```    
 $ git clone https://github.com/OBInvest/drecvm.git
@@ -42,3 +48,26 @@ $ docker run -p 8888:8888 obinvest/drecvm:1.0
 4 - Abrir no navegador da maquina host e acessar a URL do jupyter notbook
 
 http://127.0.0.1:8888
+
+## Autores
+- **Gilberto Gil F. Gomes Passos** - [@gilbertogilfgp](https://github.com/gilbertogilfgp)
+- **Saulo A. Almeida** - [@sauloaalmeida](https://github.com/sauloaalmeida)
+- **Valquire da S. de Jesus** - [@Valquire](https://github.com/Valquire)
+
+## Como está organizado o repositório Git
+- [`LICENSE`](LICENSE): contém a licença do repositório.
+- [`environment.yml`](environment.yml): contém as dependências utilizadas no projeto exportadas para arquivo yml.
+ obinvest-dre-historico.csv103.2 MB
+
+
+- [`requirements.txt`](requirements.txt): contém as dependências utilizadas no projeto exportadas para arquivo txt.
+
+- [`prov_generator.ipynb`](prov_generator.ipynb): contém o script utilizado para a geração das proveniências dos dados.
+
+
+## Como Citar
+Se você utilizar este repositório em seu trabalho, por favor, cite o artigo:
+
+>Gilberto Gil F. Gomes Passos, Saulo A. Almeida &, Valquire da S. de Jesus. (2022). Disponibilizando Dados sobre Resultados Financeiros de Cias Abertas, Enriquecidos com Proveniencia para a OBInvest https://doi.org/10.5281/zenodo.7110653
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7114963.svg)](https://doi.org/10.5281/zenodo.7114963)
