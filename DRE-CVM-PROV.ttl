@@ -17,7 +17,7 @@ cvm:trabalho-final a prov:Activity ;
 obinvest:ds_obinvest a prov:Entity,
         "void:Dataset"^^xsd:string ;
     rdfs:label "Dataset final com historico de dados das DREs trimestrais"^^xsd:string ;
-    prov:generatedAtTime "2022-09-27 03:19:28.670621"^^xsd:string ;
+    prov:generatedAtTime "2022-10-11 01:48:39.116743"^^xsd:string ;
     prov:wasGeneratedBy ufrj:cria_dataset_obinvest .
 
 ufrj:Gil a prov:Agent,
@@ -154,72 +154,72 @@ cvm:CVM a prov:Agent,
 
 obinvest:df_acm3 a prov:Entity ;
     rdfs:label "Dataframe com valores das DREs acumuladas dos tres primeiros trimestres"^^xsd:string ;
-    prov:generatedAtTime "2022-09-27 03:18:49.600832"^^xsd:string ;
+    prov:generatedAtTime "2022-10-11 01:48:21.542327"^^xsd:string ;
     prov:wasGeneratedBy ufrj:obter_acumulado_trim3 .
 
 obinvest:df_cia a prov:Entity ;
     rdfs:label "Dataframe com dados das empresas"^^xsd:string ;
-    prov:generatedAtTime "2022-09-27 03:18:32.086590"^^xsd:string ;
+    prov:generatedAtTime "2022-10-11 01:48:12.005131"^^xsd:string ;
     prov:wasGeneratedBy ufrj:carregar_datasets .
 
 obinvest:df_dfp a prov:Entity ;
     rdfs:label "Dataframe com dados das DREs anuais"^^xsd:string ;
-    prov:generatedAtTime "2022-09-27 03:18:32.086590"^^xsd:string ;
+    prov:generatedAtTime "2022-10-11 01:48:12.005131"^^xsd:string ;
     prov:wasGeneratedBy ufrj:carregar_datasets .
 
 obinvest:df_dfp_ano a prov:Entity ;
     rdfs:label "Dataframe com dados das DREs anuais, adicionada a coluna ano"^^xsd:string ;
-    prov:generatedAtTime "2022-09-27 03:18:47.191613"^^xsd:string ;
+    prov:generatedAtTime "2022-10-11 01:48:20.348637"^^xsd:string ;
     prov:wasGeneratedBy ufrj:adiciona_ano_dres .
 
 obinvest:df_dfp_setor a prov:Entity ;
     rdfs:label "Dataframe com dados das DREs anuais, adicionado o campo de setor da empresa"^^xsd:string ;
-    prov:generatedAtTime "2022-09-27 03:18:49.806931"^^xsd:string ;
+    prov:generatedAtTime "2022-10-11 01:48:21.644323"^^xsd:string ;
     prov:wasGeneratedBy ufrj:merge_dre_dfp_setor .
 
 obinvest:df_dfp_ultimo_exerc a prov:Entity ;
     rdfs:label "Dataframe com dados das DREs anuais apenas do ano relativo ao dataset"^^xsd:string ;
-    prov:generatedAtTime "2022-09-27 03:18:49.718492"^^xsd:string ;
+    prov:generatedAtTime "2022-10-11 01:48:21.594135"^^xsd:string ;
     prov:wasGeneratedBy ufrj:filtrar_ultimo_exerc_dfp .
 
 obinvest:df_itr a prov:Entity ;
     rdfs:label "Dataframe com dados das DREs trimestrais"^^xsd:string ;
-    prov:generatedAtTime "2022-09-27 03:18:32.086590"^^xsd:string ;
+    prov:generatedAtTime "2022-10-11 01:48:12.005131"^^xsd:string ;
     prov:wasGeneratedBy ufrj:carregar_datasets .
 
 obinvest:df_itr_ano a prov:Entity ;
     rdfs:label "Dataframe com dados das DREs trimestrais, adicionada a coluna ano"^^xsd:string ;
-    prov:generatedAtTime "2022-09-27 03:18:47.191613"^^xsd:string ;
+    prov:generatedAtTime "2022-10-11 01:48:20.348637"^^xsd:string ;
     prov:wasGeneratedBy ufrj:adiciona_ano_dres .
 
 obinvest:df_obinvest a prov:Entity ;
     rdfs:label "Dataframe final com dados das DREs trimestrais"^^xsd:string ;
-    prov:generatedAtTime "2022-09-27 03:19:12.556212"^^xsd:string ;
+    prov:generatedAtTime "2022-10-11 01:48:32.178776"^^xsd:string ;
     prov:wasGeneratedBy ufrj:padronizacao_valor_conta .
 
 obinvest:df_obinvest_campo_trimestre a prov:Entity ;
     rdfs:label "Dataframe com dados das DREs trimestrais, adicionada a coluna trimestre"^^xsd:string ;
-    prov:generatedAtTime "2022-09-27 03:18:54.753655"^^xsd:string ;
+    prov:generatedAtTime "2022-10-11 01:48:24.355228"^^xsd:string ;
     prov:wasGeneratedBy ufrj:adiciona_campo_trimestre .
 
 obinvest:df_obinvest_tratado a prov:Entity ;
     rdfs:label "Dataframe com valores das DREs acumuladas dos tres primeiros trimestres"^^xsd:string ;
-    prov:generatedAtTime "2022-09-27 03:18:50.399856"^^xsd:string ;
+    prov:generatedAtTime "2022-10-11 01:48:21.988484"^^xsd:string ;
     prov:wasGeneratedBy ufrj:remove_registros_duplicados .
 
 obinvest:df_trim123 a prov:Entity ;
     rdfs:label "Dataframe com dados das DREs trimestrais dos trimestres 1, 2 e 3"^^xsd:string ;
-    prov:generatedAtTime "2022-09-27 03:18:49.192028"^^xsd:string ;
+    prov:generatedAtTime "2022-10-11 01:48:21.395574"^^xsd:string ;
     prov:wasGeneratedBy ufrj:obter_trimestres_123 .
 
 obinvest:df_trim1234 a prov:Entity ;
     rdfs:label "Dataframe com dados das DREs de todos os trimestres"^^xsd:string ;
-    prov:generatedAtTime "2022-09-27 03:18:50.091880"^^xsd:string ;
+    prov:generatedAtTime "2022-10-11 01:48:21.804044"^^xsd:string ;
     prov:wasGeneratedBy ufrj:concatena_trimestres .
 
 obinvest:df_trim4 a prov:Entity ;
     rdfs:label "Dataframe com dados das DREs do 4 trimestre, subtraindo DFP anual pelo acumulado dos tres primeiros"^^xsd:string ;
-    prov:generatedAtTime "2022-09-27 03:18:50.036325"^^xsd:string ;
+    prov:generatedAtTime "2022-10-11 01:48:21.765933"^^xsd:string ;
     prov:wasGeneratedBy ufrj:obter_trimestre_4 .
 
 ufrj:PPGI a prov:Agent,
@@ -232,8 +232,8 @@ ufrj:UFRJ a prov:Agent,
     foaf:name "Universidade Federal do Rio de Janeiro"^^xsd:string .
 
 ufrj:adiciona_campo_trimestre a prov:Activity ;
-    prov:endedAtTime "2022-09-27T03:18:54.753655"^^xsd:dateTime ;
-    prov:startedAtTime "2022-09-27T03:18:50.400194"^^xsd:dateTime ;
+    prov:endedAtTime "2022-10-11T01:48:24.355228"^^xsd:dateTime ;
+    prov:startedAtTime "2022-10-11T01:48:21.988677"^^xsd:dateTime ;
     prov:used obinvest:df_obinvest_tratado ;
     prov:wasAssociatedWith ufrj:drecvm.ipynb .
 
@@ -265,71 +265,71 @@ ufrj:armazenar-datasets a prov:Activity ;
     prov:wasAssociatedWith ufrj:GRUPO2 .
 
 ufrj:concatena_trimestres a prov:Activity ;
-    prov:endedAtTime "2022-09-27T03:18:50.091880"^^xsd:dateTime ;
-    prov:startedAtTime "2022-09-27T03:18:50.044175"^^xsd:dateTime ;
+    prov:endedAtTime "2022-10-11T01:48:21.804044"^^xsd:dateTime ;
+    prov:startedAtTime "2022-10-11T01:48:21.771140"^^xsd:dateTime ;
     prov:used obinvest:df_trim123,
         obinvest:df_trim4 ;
     prov:wasAssociatedWith ufrj:drecvm.ipynb .
 
 ufrj:cria_dataset_obinvest a prov:Activity ;
-    prov:endedAtTime "2022-09-27T03:19:28.670621"^^xsd:dateTime ;
-    prov:startedAtTime "2022-09-27T03:19:12.556421"^^xsd:dateTime ;
+    prov:endedAtTime "2022-10-11T01:48:39.116743"^^xsd:dateTime ;
+    prov:startedAtTime "2022-10-11T01:48:32.179019"^^xsd:dateTime ;
     prov:used obinvest:df_obinvest ;
     prov:wasAssociatedWith ufrj:drecvm.ipynb .
 
 ufrj:filtrar_ultimo_exerc_dfp a prov:Activity ;
-    prov:endedAtTime "2022-09-27T03:18:49.718492"^^xsd:dateTime ;
-    prov:startedAtTime "2022-09-27T03:18:49.602186"^^xsd:dateTime ;
+    prov:endedAtTime "2022-10-11T01:48:21.594135"^^xsd:dateTime ;
+    prov:startedAtTime "2022-10-11T01:48:21.542504"^^xsd:dateTime ;
     prov:used obinvest:df_dfp_ano ;
     prov:wasAssociatedWith ufrj:drecvm.ipynb .
 
 ufrj:merge_dre_dfp_setor a prov:Activity ;
-    prov:endedAtTime "2022-09-27T03:18:49.806931"^^xsd:dateTime ;
-    prov:startedAtTime "2022-09-27T03:18:49.718859"^^xsd:dateTime ;
+    prov:endedAtTime "2022-10-11T01:48:21.644323"^^xsd:dateTime ;
+    prov:startedAtTime "2022-10-11T01:48:21.594275"^^xsd:dateTime ;
     prov:used obinvest:df_cia_tratado,
         obinvest:df_dfp_ultimo_exerc ;
     prov:wasAssociatedWith ufrj:drecvm.ipynb .
 
 ufrj:merge_dre_itr_setor a prov:Activity ;
-    prov:endedAtTime "2022-09-27T03:18:48.579199"^^xsd:dateTime ;
-    prov:startedAtTime "2022-09-27T03:18:47.197470"^^xsd:dateTime ;
+    prov:endedAtTime "2022-10-11T01:48:21.167922"^^xsd:dateTime ;
+    prov:startedAtTime "2022-10-11T01:48:20.351438"^^xsd:dateTime ;
     prov:used obinvest:df_cia_tratado,
         obinvest:df_itr_ano ;
     prov:wasAssociatedWith ufrj:drecvm.ipynb .
 
 ufrj:obter_acumulado_trim3 a prov:Activity ;
-    prov:endedAtTime "2022-09-27T03:18:49.600832"^^xsd:dateTime ;
-    prov:startedAtTime "2022-09-27T03:18:49.208700"^^xsd:dateTime ;
+    prov:endedAtTime "2022-10-11T01:48:21.542327"^^xsd:dateTime ;
+    prov:startedAtTime "2022-10-11T01:48:21.407166"^^xsd:dateTime ;
     prov:used obinvest:df_itr_setor ;
     prov:wasAssociatedWith ufrj:drecvm.ipynb .
 
 ufrj:obter_trimestre_4 a prov:Activity ;
-    prov:endedAtTime "2022-09-27T03:18:50.036325"^^xsd:dateTime ;
-    prov:startedAtTime "2022-09-27T03:18:49.807182"^^xsd:dateTime ;
+    prov:endedAtTime "2022-10-11T01:48:21.765933"^^xsd:dateTime ;
+    prov:startedAtTime "2022-10-11T01:48:21.644496"^^xsd:dateTime ;
     prov:used obinvest:df_acm3,
         obinvest:df_dfp_setor .
 
 ufrj:obter_trimestres_123 a prov:Activity ;
-    prov:endedAtTime "2022-09-27T03:18:49.192028"^^xsd:dateTime ;
-    prov:startedAtTime "2022-09-27T03:18:48.579496"^^xsd:dateTime ;
+    prov:endedAtTime "2022-10-11T01:48:21.395574"^^xsd:dateTime ;
+    prov:startedAtTime "2022-10-11T01:48:21.168105"^^xsd:dateTime ;
     prov:used obinvest:df_itr_setor ;
     prov:wasAssociatedWith ufrj:drecvm.ipynb .
 
 ufrj:padronizacao_valor_conta a prov:Activity ;
-    prov:endedAtTime "2022-09-27T03:19:12.556212"^^xsd:dateTime ;
-    prov:startedAtTime "2022-09-27T03:18:54.755449"^^xsd:dateTime ;
+    prov:endedAtTime "2022-10-11T01:48:32.178776"^^xsd:dateTime ;
+    prov:startedAtTime "2022-10-11T01:48:24.356537"^^xsd:dateTime ;
     prov:used obinvest:df_obinvest_campo_trimestre ;
     prov:wasAssociatedWith ufrj:drecvm.ipynb .
 
 ufrj:remove_registros_duplicados a prov:Activity ;
-    prov:endedAtTime "2022-09-27T03:18:50.399856"^^xsd:dateTime ;
-    prov:startedAtTime "2022-09-27T03:18:50.092375"^^xsd:dateTime ;
+    prov:endedAtTime "2022-10-11T01:48:21.988484"^^xsd:dateTime ;
+    prov:startedAtTime "2022-10-11T01:48:21.804275"^^xsd:dateTime ;
     prov:used obinvest:df_trim1234 ;
     prov:wasAssociatedWith ufrj:drecvm.ipynb .
 
 ufrj:trata_dados_companhias a prov:Activity ;
-    prov:endedAtTime "2022-09-27T03:18:47.197221"^^xsd:dateTime ;
-    prov:startedAtTime "2022-09-27T03:18:47.192196"^^xsd:dateTime ;
+    prov:endedAtTime "2022-10-11T01:48:20.351310"^^xsd:dateTime ;
+    prov:startedAtTime "2022-10-11T01:48:20.348838"^^xsd:dateTime ;
     prov:used obinvest:df_cia ;
     prov:wasAssociatedWith ufrj:drecvm.ipynb .
 
@@ -473,12 +473,12 @@ cvm-dre-itr:itr_cia_aberta_DRE_con_2021.csv a prov:Entity,
 
 obinvest:df_cia_tratado a prov:Entity ;
     rdfs:label "Dataframe com dados das empresas ativas, apenas com os campos necessarios"^^xsd:string ;
-    prov:generatedAtTime "2022-09-27 03:18:47.197221"^^xsd:string ;
+    prov:generatedAtTime "2022-10-11 01:48:20.351310"^^xsd:string ;
     prov:wasGeneratedBy ufrj:trata_dados_companhias .
 
 obinvest:df_itr_setor a prov:Entity ;
     rdfs:label "Dataframe com dados das DREs trimestrais, adicionado o campo de setor da empresa"^^xsd:string ;
-    prov:generatedAtTime "2022-09-27 03:18:48.579199"^^xsd:string ;
+    prov:generatedAtTime "2022-10-11 01:48:21.167922"^^xsd:string ;
     prov:wasGeneratedBy ufrj:merge_dre_itr_setor .
 
 ufrj:MAI712 a prov:Agent,
@@ -487,8 +487,8 @@ ufrj:MAI712 a prov:Agent,
     foaf:name "Disciplina de Fundamentos de Ciências de Dados"^^xsd:string .
 
 ufrj:adiciona_ano_dres a prov:Activity ;
-    prov:endedAtTime "2022-09-27T03:18:47.191613"^^xsd:dateTime ;
-    prov:startedAtTime "2022-09-27T03:18:32.087431"^^xsd:dateTime ;
+    prov:endedAtTime "2022-10-11T01:48:20.348637"^^xsd:dateTime ;
+    prov:startedAtTime "2022-10-11T01:48:12.005643"^^xsd:dateTime ;
     prov:used obinvest:df_dfp,
         obinvest:df_itr ;
     prov:wasAssociatedWith ufrj:drecvm.ipynb .
@@ -497,8 +497,8 @@ cvm:criar-dataset a prov:Activity ;
     prov:wasAssociatedWith cvm:CVM .
 
 ufrj:carregar_datasets a prov:Activity ;
-    prov:endedAtTime "2022-09-27T03:18:32.086590"^^xsd:dateTime ;
-    prov:startedAtTime "2022-09-27T03:18:25.400480"^^xsd:dateTime ;
+    prov:endedAtTime "2022-10-11T01:48:12.005131"^^xsd:dateTime ;
+    prov:startedAtTime "2022-10-11T01:48:07.802207"^^xsd:dateTime ;
     prov:used cvm-cademp:cad_cia_aberta.csv,
         cvm-dre-dfp:dfp_cia_aberta_DRE_con_2011.csv,
         cvm-dre-dfp:dfp_cia_aberta_DRE_con_2012.csv,

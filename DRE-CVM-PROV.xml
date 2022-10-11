@@ -662,8 +662,8 @@
     <prov:usedEntity prov:ref="obinvest:github-drecvm"/>
   </prov:wasDerivedFrom>
   <prov:activity prov:id="ufrj:carregar_datasets">
-    <prov:startTime>2022-09-27T03:18:25.400480</prov:startTime>
-    <prov:endTime>2022-09-27T03:18:32.086590</prov:endTime>
+    <prov:startTime>2022-10-11T01:48:07.802207</prov:startTime>
+    <prov:endTime>2022-10-11T01:48:12.005131</prov:endTime>
   </prov:activity>
   <prov:wasAssociatedWith>
     <prov:activity prov:ref="ufrj:carregar_datasets"/>
@@ -763,15 +763,15 @@
   </prov:used>
   <prov:entity prov:id="obinvest:df_cia">
     <prov:label>Dataframe com dados das empresas</prov:label>
-    <prov:generatedAtTime>2022-09-27 03:18:32.086590</prov:generatedAtTime>
+    <prov:generatedAtTime>2022-10-11 01:48:12.005131</prov:generatedAtTime>
   </prov:entity>
   <prov:entity prov:id="obinvest:df_itr">
     <prov:label>Dataframe com dados das DREs trimestrais</prov:label>
-    <prov:generatedAtTime>2022-09-27 03:18:32.086590</prov:generatedAtTime>
+    <prov:generatedAtTime>2022-10-11 01:48:12.005131</prov:generatedAtTime>
   </prov:entity>
   <prov:entity prov:id="obinvest:df_dfp">
     <prov:label>Dataframe com dados das DREs anuais</prov:label>
-    <prov:generatedAtTime>2022-09-27 03:18:32.086590</prov:generatedAtTime>
+    <prov:generatedAtTime>2022-10-11 01:48:12.005131</prov:generatedAtTime>
   </prov:entity>
   <prov:wasGeneratedBy>
     <prov:entity prov:ref="obinvest:df_cia"/>
@@ -786,8 +786,8 @@
     <prov:activity prov:ref="ufrj:carregar_datasets"/>
   </prov:wasGeneratedBy>
   <prov:activity prov:id="ufrj:adiciona_ano_dres">
-    <prov:startTime>2022-09-27T03:18:32.087431</prov:startTime>
-    <prov:endTime>2022-09-27T03:18:47.191613</prov:endTime>
+    <prov:startTime>2022-10-11T01:48:12.005643</prov:startTime>
+    <prov:endTime>2022-10-11T01:48:20.348637</prov:endTime>
   </prov:activity>
   <prov:wasAssociatedWith>
     <prov:activity prov:ref="ufrj:adiciona_ano_dres"/>
@@ -803,11 +803,11 @@
   </prov:used>
   <prov:entity prov:id="obinvest:df_itr_ano">
     <prov:label>Dataframe com dados das DREs trimestrais, adicionada a coluna ano</prov:label>
-    <prov:generatedAtTime>2022-09-27 03:18:47.191613</prov:generatedAtTime>
+    <prov:generatedAtTime>2022-10-11 01:48:20.348637</prov:generatedAtTime>
   </prov:entity>
   <prov:entity prov:id="obinvest:df_dfp_ano">
     <prov:label>Dataframe com dados das DREs anuais, adicionada a coluna ano</prov:label>
-    <prov:generatedAtTime>2022-09-27 03:18:47.191613</prov:generatedAtTime>
+    <prov:generatedAtTime>2022-10-11 01:48:20.348637</prov:generatedAtTime>
   </prov:entity>
   <prov:wasGeneratedBy>
     <prov:entity prov:ref="obinvest:df_itr_ano"/>
@@ -818,8 +818,8 @@
     <prov:activity prov:ref="ufrj:adiciona_ano_dres"/>
   </prov:wasGeneratedBy>
   <prov:activity prov:id="ufrj:trata_dados_companhias">
-    <prov:startTime>2022-09-27T03:18:47.192196</prov:startTime>
-    <prov:endTime>2022-09-27T03:18:47.197221</prov:endTime>
+    <prov:startTime>2022-10-11T01:48:20.348838</prov:startTime>
+    <prov:endTime>2022-10-11T01:48:20.351310</prov:endTime>
   </prov:activity>
   <prov:wasAssociatedWith>
     <prov:activity prov:ref="ufrj:trata_dados_companhias"/>
@@ -831,15 +831,15 @@
   </prov:used>
   <prov:entity prov:id="obinvest:df_cia_tratado">
     <prov:label>Dataframe com dados das empresas ativas, apenas com os campos necessarios</prov:label>
-    <prov:generatedAtTime>2022-09-27 03:18:47.197221</prov:generatedAtTime>
+    <prov:generatedAtTime>2022-10-11 01:48:20.351310</prov:generatedAtTime>
   </prov:entity>
   <prov:wasGeneratedBy>
     <prov:entity prov:ref="obinvest:df_cia_tratado"/>
     <prov:activity prov:ref="ufrj:trata_dados_companhias"/>
   </prov:wasGeneratedBy>
   <prov:activity prov:id="ufrj:merge_dre_itr_setor">
-    <prov:startTime>2022-09-27T03:18:47.197470</prov:startTime>
-    <prov:endTime>2022-09-27T03:18:48.579199</prov:endTime>
+    <prov:startTime>2022-10-11T01:48:20.351438</prov:startTime>
+    <prov:endTime>2022-10-11T01:48:21.167922</prov:endTime>
   </prov:activity>
   <prov:wasAssociatedWith>
     <prov:activity prov:ref="ufrj:merge_dre_itr_setor"/>
@@ -855,15 +855,15 @@
   </prov:used>
   <prov:entity prov:id="obinvest:df_itr_setor">
     <prov:label>Dataframe com dados das DREs trimestrais, adicionado o campo de setor da empresa</prov:label>
-    <prov:generatedAtTime>2022-09-27 03:18:48.579199</prov:generatedAtTime>
+    <prov:generatedAtTime>2022-10-11 01:48:21.167922</prov:generatedAtTime>
   </prov:entity>
   <prov:wasGeneratedBy>
     <prov:entity prov:ref="obinvest:df_itr_setor"/>
     <prov:activity prov:ref="ufrj:merge_dre_itr_setor"/>
   </prov:wasGeneratedBy>
   <prov:activity prov:id="ufrj:obter_trimestres_123">
-    <prov:startTime>2022-09-27T03:18:48.579496</prov:startTime>
-    <prov:endTime>2022-09-27T03:18:49.192028</prov:endTime>
+    <prov:startTime>2022-10-11T01:48:21.168105</prov:startTime>
+    <prov:endTime>2022-10-11T01:48:21.395574</prov:endTime>
   </prov:activity>
   <prov:wasAssociatedWith>
     <prov:activity prov:ref="ufrj:obter_trimestres_123"/>
@@ -875,15 +875,15 @@
   </prov:used>
   <prov:entity prov:id="obinvest:df_trim123">
     <prov:label>Dataframe com dados das DREs trimestrais dos trimestres 1, 2 e 3</prov:label>
-    <prov:generatedAtTime>2022-09-27 03:18:49.192028</prov:generatedAtTime>
+    <prov:generatedAtTime>2022-10-11 01:48:21.395574</prov:generatedAtTime>
   </prov:entity>
   <prov:wasGeneratedBy>
     <prov:entity prov:ref="obinvest:df_trim123"/>
     <prov:activity prov:ref="ufrj:obter_trimestres_123"/>
   </prov:wasGeneratedBy>
   <prov:activity prov:id="ufrj:obter_acumulado_trim3">
-    <prov:startTime>2022-09-27T03:18:49.208700</prov:startTime>
-    <prov:endTime>2022-09-27T03:18:49.600832</prov:endTime>
+    <prov:startTime>2022-10-11T01:48:21.407166</prov:startTime>
+    <prov:endTime>2022-10-11T01:48:21.542327</prov:endTime>
   </prov:activity>
   <prov:wasAssociatedWith>
     <prov:activity prov:ref="ufrj:obter_acumulado_trim3"/>
@@ -895,15 +895,15 @@
   </prov:used>
   <prov:entity prov:id="obinvest:df_acm3">
     <prov:label>Dataframe com valores das DREs acumuladas dos tres primeiros trimestres</prov:label>
-    <prov:generatedAtTime>2022-09-27 03:18:49.600832</prov:generatedAtTime>
+    <prov:generatedAtTime>2022-10-11 01:48:21.542327</prov:generatedAtTime>
   </prov:entity>
   <prov:wasGeneratedBy>
     <prov:entity prov:ref="obinvest:df_acm3"/>
     <prov:activity prov:ref="ufrj:obter_acumulado_trim3"/>
   </prov:wasGeneratedBy>
   <prov:activity prov:id="ufrj:filtrar_ultimo_exerc_dfp">
-    <prov:startTime>2022-09-27T03:18:49.602186</prov:startTime>
-    <prov:endTime>2022-09-27T03:18:49.718492</prov:endTime>
+    <prov:startTime>2022-10-11T01:48:21.542504</prov:startTime>
+    <prov:endTime>2022-10-11T01:48:21.594135</prov:endTime>
   </prov:activity>
   <prov:wasAssociatedWith>
     <prov:activity prov:ref="ufrj:filtrar_ultimo_exerc_dfp"/>
@@ -915,15 +915,15 @@
   </prov:used>
   <prov:entity prov:id="obinvest:df_dfp_ultimo_exerc">
     <prov:label>Dataframe com dados das DREs anuais apenas do ano relativo ao dataset</prov:label>
-    <prov:generatedAtTime>2022-09-27 03:18:49.718492</prov:generatedAtTime>
+    <prov:generatedAtTime>2022-10-11 01:48:21.594135</prov:generatedAtTime>
   </prov:entity>
   <prov:wasGeneratedBy>
     <prov:entity prov:ref="obinvest:df_dfp_ultimo_exerc"/>
     <prov:activity prov:ref="ufrj:filtrar_ultimo_exerc_dfp"/>
   </prov:wasGeneratedBy>
   <prov:activity prov:id="ufrj:merge_dre_dfp_setor">
-    <prov:startTime>2022-09-27T03:18:49.718859</prov:startTime>
-    <prov:endTime>2022-09-27T03:18:49.806931</prov:endTime>
+    <prov:startTime>2022-10-11T01:48:21.594275</prov:startTime>
+    <prov:endTime>2022-10-11T01:48:21.644323</prov:endTime>
   </prov:activity>
   <prov:wasAssociatedWith>
     <prov:activity prov:ref="ufrj:merge_dre_dfp_setor"/>
@@ -939,15 +939,15 @@
   </prov:used>
   <prov:entity prov:id="obinvest:df_dfp_setor">
     <prov:label>Dataframe com dados das DREs anuais, adicionado o campo de setor da empresa</prov:label>
-    <prov:generatedAtTime>2022-09-27 03:18:49.806931</prov:generatedAtTime>
+    <prov:generatedAtTime>2022-10-11 01:48:21.644323</prov:generatedAtTime>
   </prov:entity>
   <prov:wasGeneratedBy>
     <prov:entity prov:ref="obinvest:df_dfp_setor"/>
     <prov:activity prov:ref="ufrj:merge_dre_dfp_setor"/>
   </prov:wasGeneratedBy>
   <prov:activity prov:id="ufrj:obter_trimestre_4">
-    <prov:startTime>2022-09-27T03:18:49.807182</prov:startTime>
-    <prov:endTime>2022-09-27T03:18:50.036325</prov:endTime>
+    <prov:startTime>2022-10-11T01:48:21.644496</prov:startTime>
+    <prov:endTime>2022-10-11T01:48:21.765933</prov:endTime>
   </prov:activity>
   <prov:wasAssociatedWith>
     <prov:activity prov:ref="ufrj:merge_dre_dfp_setor"/>
@@ -963,15 +963,15 @@
   </prov:used>
   <prov:entity prov:id="obinvest:df_trim4">
     <prov:label>Dataframe com dados das DREs do 4 trimestre, subtraindo DFP anual pelo acumulado dos tres primeiros</prov:label>
-    <prov:generatedAtTime>2022-09-27 03:18:50.036325</prov:generatedAtTime>
+    <prov:generatedAtTime>2022-10-11 01:48:21.765933</prov:generatedAtTime>
   </prov:entity>
   <prov:wasGeneratedBy>
     <prov:entity prov:ref="obinvest:df_trim4"/>
     <prov:activity prov:ref="ufrj:obter_trimestre_4"/>
   </prov:wasGeneratedBy>
   <prov:activity prov:id="ufrj:concatena_trimestres">
-    <prov:startTime>2022-09-27T03:18:50.044175</prov:startTime>
-    <prov:endTime>2022-09-27T03:18:50.091880</prov:endTime>
+    <prov:startTime>2022-10-11T01:48:21.771140</prov:startTime>
+    <prov:endTime>2022-10-11T01:48:21.804044</prov:endTime>
   </prov:activity>
   <prov:wasAssociatedWith>
     <prov:activity prov:ref="ufrj:concatena_trimestres"/>
@@ -987,15 +987,15 @@
   </prov:used>
   <prov:entity prov:id="obinvest:df_trim1234">
     <prov:label>Dataframe com dados das DREs de todos os trimestres</prov:label>
-    <prov:generatedAtTime>2022-09-27 03:18:50.091880</prov:generatedAtTime>
+    <prov:generatedAtTime>2022-10-11 01:48:21.804044</prov:generatedAtTime>
   </prov:entity>
   <prov:wasGeneratedBy>
     <prov:entity prov:ref="obinvest:df_trim1234"/>
     <prov:activity prov:ref="ufrj:concatena_trimestres"/>
   </prov:wasGeneratedBy>
   <prov:activity prov:id="ufrj:remove_registros_duplicados">
-    <prov:startTime>2022-09-27T03:18:50.092375</prov:startTime>
-    <prov:endTime>2022-09-27T03:18:50.399856</prov:endTime>
+    <prov:startTime>2022-10-11T01:48:21.804275</prov:startTime>
+    <prov:endTime>2022-10-11T01:48:21.988484</prov:endTime>
   </prov:activity>
   <prov:wasAssociatedWith>
     <prov:activity prov:ref="ufrj:remove_registros_duplicados"/>
@@ -1007,15 +1007,15 @@
   </prov:used>
   <prov:entity prov:id="obinvest:df_obinvest_tratado">
     <prov:label>Dataframe com valores das DREs acumuladas dos tres primeiros trimestres</prov:label>
-    <prov:generatedAtTime>2022-09-27 03:18:50.399856</prov:generatedAtTime>
+    <prov:generatedAtTime>2022-10-11 01:48:21.988484</prov:generatedAtTime>
   </prov:entity>
   <prov:wasGeneratedBy>
     <prov:entity prov:ref="obinvest:df_obinvest_tratado"/>
     <prov:activity prov:ref="ufrj:remove_registros_duplicados"/>
   </prov:wasGeneratedBy>
   <prov:activity prov:id="ufrj:adiciona_campo_trimestre">
-    <prov:startTime>2022-09-27T03:18:50.400194</prov:startTime>
-    <prov:endTime>2022-09-27T03:18:54.753655</prov:endTime>
+    <prov:startTime>2022-10-11T01:48:21.988677</prov:startTime>
+    <prov:endTime>2022-10-11T01:48:24.355228</prov:endTime>
   </prov:activity>
   <prov:wasAssociatedWith>
     <prov:activity prov:ref="ufrj:adiciona_campo_trimestre"/>
@@ -1027,15 +1027,15 @@
   </prov:used>
   <prov:entity prov:id="obinvest:df_obinvest_campo_trimestre">
     <prov:label>Dataframe com dados das DREs trimestrais, adicionada a coluna trimestre</prov:label>
-    <prov:generatedAtTime>2022-09-27 03:18:54.753655</prov:generatedAtTime>
+    <prov:generatedAtTime>2022-10-11 01:48:24.355228</prov:generatedAtTime>
   </prov:entity>
   <prov:wasGeneratedBy>
     <prov:entity prov:ref="obinvest:df_obinvest_campo_trimestre"/>
     <prov:activity prov:ref="ufrj:adiciona_campo_trimestre"/>
   </prov:wasGeneratedBy>
   <prov:activity prov:id="ufrj:padronizacao_valor_conta">
-    <prov:startTime>2022-09-27T03:18:54.755449</prov:startTime>
-    <prov:endTime>2022-09-27T03:19:12.556212</prov:endTime>
+    <prov:startTime>2022-10-11T01:48:24.356537</prov:startTime>
+    <prov:endTime>2022-10-11T01:48:32.178776</prov:endTime>
   </prov:activity>
   <prov:wasAssociatedWith>
     <prov:activity prov:ref="ufrj:padronizacao_valor_conta"/>
@@ -1047,15 +1047,15 @@
   </prov:used>
   <prov:entity prov:id="obinvest:df_obinvest">
     <prov:label>Dataframe final com dados das DREs trimestrais</prov:label>
-    <prov:generatedAtTime>2022-09-27 03:19:12.556212</prov:generatedAtTime>
+    <prov:generatedAtTime>2022-10-11 01:48:32.178776</prov:generatedAtTime>
   </prov:entity>
   <prov:wasGeneratedBy>
     <prov:entity prov:ref="obinvest:df_obinvest"/>
     <prov:activity prov:ref="ufrj:padronizacao_valor_conta"/>
   </prov:wasGeneratedBy>
   <prov:activity prov:id="ufrj:cria_dataset_obinvest">
-    <prov:startTime>2022-09-27T03:19:12.556421</prov:startTime>
-    <prov:endTime>2022-09-27T03:19:28.670621</prov:endTime>
+    <prov:startTime>2022-10-11T01:48:32.179019</prov:startTime>
+    <prov:endTime>2022-10-11T01:48:39.116743</prov:endTime>
   </prov:activity>
   <prov:wasAssociatedWith>
     <prov:activity prov:ref="ufrj:cria_dataset_obinvest"/>
@@ -1068,7 +1068,7 @@
   <prov:entity prov:id="obinvest:ds_obinvest">
     <prov:label>Dataset final com historico de dados das DREs trimestrais</prov:label>
     <prov:type xsi:type="xsd:string">void:Dataset</prov:type>
-    <prov:generatedAtTime>2022-09-27 03:19:28.670621</prov:generatedAtTime>
+    <prov:generatedAtTime>2022-10-11 01:48:39.116743</prov:generatedAtTime>
   </prov:entity>
   <prov:wasGeneratedBy>
     <prov:entity prov:ref="obinvest:ds_obinvest"/>
