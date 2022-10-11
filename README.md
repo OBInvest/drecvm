@@ -55,15 +55,20 @@ http://127.0.0.1:8888
 - **Valquire da S. de Jesus** - [@Valquire](https://github.com/Valquire)
 
 ## Como está organizado o repositório Git
+data
+- [`data`](data): diretório com os datasets brutos, baixados da CVM em 16/09/2022.
+- [`DRE-CVM-PROV.png`](DRE-CVM-PROV.png): arquivo gerado com a proveniência no formato PNG.
+- [`DRE-CVM-PROV.ttl`](DRE-CVM-PROV.ttl): arquivo gerado com a proveniência no formato DRF - Turtle.
+- [`DRE-CVM-PROV.xml`](DRE-CVM-PROV.png): arquivo gerado com a proveniência no formato XML.
+- [`Dockerfile`](Dockerfile): arquivo utilizado na criação da imagem Docker.
 - [`LICENSE`](LICENSE): contém a licença do repositório.
+- [`README.md`](README.md): conteúdo desse arquivo de README.
+- [`artigo-dre_cmv.pdf`](artigo-dre_cmv.pdf): arquivo pdf do artigo.
+- [`cmv-dre-analise.knwf`](cmv-dre-analise.knwf): arquivo knime com o workflow utilizano na exploração inicial dos datasetes.
+- [`dicionario-dados-obinvest-dre-historico.csv`](dicionario-dados-obinvest-dre-historico.csv): arquivo com o dicionário de dados do dataset OBInvest.
+- [`drecvm.ipynb`](drecvm.ipynb): contém o notebook python do experimento, que executar o processo de criação do Dataset OBInvest e geração da proveniência em tempo de execução.
 - [`environment.yml`](environment.yml): contém as dependências utilizadas no projeto exportadas para arquivo yml.
- obinvest-dre-historico.csv103.2 MB
-
-
-- [`requirements.txt`](requirements.txt): contém as dependências utilizadas no projeto exportadas para arquivo txt.
-
-- [`prov_generator.ipynb`](prov_generator.ipynb): contém o script utilizado para a geração das proveniências dos dados.
-
+- [`obinvest-dre-historico.csv`](obinvest-dre-historico.csv): arquivo com o Dataset OBInvest gerado durante a execução do experimento.
 
 ## Como Citar
 Se você utilizar este repositório em seu trabalho, por favor, cite o artigo:
