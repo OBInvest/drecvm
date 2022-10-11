@@ -1,5 +1,4 @@
 # drecvm - Dados de Resultados de Empresas de Capital Aberto obtidos da CVM.
-Repositório utilizado para o trabalho final da discplina Fundamentos de Data Science no Programa de pós graduação em Informática (PPGI) da da UFRJ. 
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7114963.svg)](https://doi.org/10.5281/zenodo.7114963)
 
@@ -7,6 +6,8 @@ Repositório utilizado para o trabalho final da discplina Fundamentos de Data Sc
 Este projeto está licenciado sob a licença Apache 2.0 - consulte o arquivo [LICENSE](LICENSE) para obter detalhes.
 
 ## Resumo do Trabalho 
+
+Este é o trabalho final da discplina Fundamentos de Data Science no Programa de pós graduação em Informática (PPGI) da da UFRJ em 2022/2 e é um estudo desenvolvido com base nas técnicas de Ciências de Dados, assim como, nos modelos de Proveniência e nos princícios FAIR, com o objetivo de produzir um dataset para apoiar a OBInvest. Para isso, foram utilizados dados abertos, relacionados aos resultados financeiros de empresas de capital aberto, disponíveis no portal da CVM, durante o período de 2011 a 2021. A obtenção desse dataset possibilitou o cálculo da métrica Margem do Setor, que possui grande relevância nos estudos de modelos de crescimento econômico.
 
 ### Como executar
 
