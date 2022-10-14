@@ -36,15 +36,15 @@ http://127.0.0.1:8888
 ### Executando localmente from scratch
 1 - Clonar esse repositório
 ```    
-$ git clone https://github.com/OBInvest/drecvm.git
+$ git clone https://github.com/OBInvest/drecvm.git --branch=v1.3
 ```  
 2 - Abrir o terminal e rodar o comando que cria uma nova imagem a partir do docker file do diretorio raiz do repositório que foi clonado
 ```    
-$ docker build -t obinvest/drecvm:1.0 .
+$ docker build -t obinvest/drecvm:1.3 .
 ```    
 3 - Executar a imagem e com isso criar o container e rodando o jupter no diretorio que ele ja baixou o notebook do trabalho
 ```
-$ docker run -p 8888:8888 obinvest/drecvm:1.0
+$ docker run -p 8888:8888 obinvest/drecvm:1.3
 ```
 4 - Abrir no navegador da maquina host e acessar a URL do jupyter notbook
 
