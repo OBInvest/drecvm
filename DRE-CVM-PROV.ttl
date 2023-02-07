@@ -9,34 +9,45 @@
 @prefix ufrj: <https://www.ufrj.br> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-cvm:trabalho-final a prov:Activity ;
-    prov:wasAssociatedWith ufrj:GRUPO2,
-        ufrj:MAI712,
-        ufrj:drecvm.ipynb .
-
 obinvest:ds_obinvest a prov:Entity,
         "void:Dataset"^^xsd:string ;
     rdfs:label "Dataset final com historico de dados das DREs trimestrais"^^xsd:string ;
-    prov:generatedAtTime "2022-10-11 01:48:39.116743"^^xsd:string ;
-    prov:wasGeneratedBy ufrj:cria_dataset_obinvest .
+    prov:generatedAtTime "2023-02-07 04:17:38.983155"^^xsd:string ;
+    prov:wasGeneratedBy ufrj:create_dataset_obinvest .
 
 ufrj:Gil a prov:Agent,
         "prov:Person"^^xsd:string ;
-    prov:actedOnBehalfOf ufrj:GRUPO2 ;
-    foaf:mbox "sauloandrade@gmail.com"^^xsd:string ;
-    foaf:name "Saulo Andrade Almeida"^^xsd:string .
+    prov:actedOnBehalfOf ufrj:GRECO ;
+    foaf:mbox "gilberto.passos@cefet-rj.br"^^xsd:string ;
+    foaf:name "Gilberto Gil Fidelis Gomes Passos"^^xsd:string .
+
+ufrj:Jorge a prov:Agent,
+        "prov:Person"^^xsd:string ;
+    prov:actedOnBehalfOf ufrj:GRECO ;
+    foaf:mbox "zavaleta@pet-si.ufrrj.br"^^xsd:string ;
+    foaf:name "Jorge Zavaleta"^^xsd:string .
 
 ufrj:Saulo a prov:Agent,
         "prov:Person"^^xsd:string ;
-    prov:actedOnBehalfOf ufrj:GRUPO2 ;
-    foaf:mbox "gilbertogilfgp@gmail.com"^^xsd:string ;
-    foaf:name "Gilberto Gil Fidelis Gomes Passos"^^xsd:string .
+    prov:actedOnBehalfOf ufrj:GRECO ;
+    foaf:mbox "sauloandrade@gmail.com"^^xsd:string ;
+    foaf:name "Saulo Andrade Almeida"^^xsd:string .
+
+ufrj:Sergio a prov:Agent,
+        "prov:Person"^^xsd:string ;
+    prov:actedOnBehalfOf ufrj:GRECO ;
+    foaf:mbox "serra@ppgi.ufrj.br"^^xsd:string ;
+    foaf:name "Sergio Serra"^^xsd:string .
 
 ufrj:Valquire a prov:Agent,
         "prov:Person"^^xsd:string ;
-    prov:actedOnBehalfOf ufrj:GRUPO2 ;
-    foaf:mbox "valquirej@gmail.com"^^xsd:string ;
+    prov:actedOnBehalfOf ufrj:GRECO ;
+    foaf:mbox "valquire@ufrj.br"^^xsd:string ;
     foaf:name "Valquire da Silva de Jesus"^^xsd:string .
+
+ufrj:create-ds-obinvest a prov:Activity ;
+    prov:wasAssociatedWith ufrj:GRECO,
+        ufrj:drecvm.ipynb .
 
 cvm-dre-dfp:dfp_cia_aberta_2011.zip a prov:Entity,
         "foaf:Document"^^xsd:string ;
@@ -154,73 +165,73 @@ cvm:CVM a prov:Agent,
 
 obinvest:df_acm3 a prov:Entity ;
     rdfs:label "Dataframe com valores das DREs acumuladas dos tres primeiros trimestres"^^xsd:string ;
-    prov:generatedAtTime "2022-10-11 01:48:21.542327"^^xsd:string ;
-    prov:wasGeneratedBy ufrj:obter_acumulado_trim3 .
+    prov:generatedAtTime "2023-02-07 04:17:36.522432"^^xsd:string ;
+    prov:wasGeneratedBy ufrj:filter_quarter3_cumulative .
 
 obinvest:df_cia a prov:Entity ;
     rdfs:label "Dataframe com dados das empresas"^^xsd:string ;
-    prov:generatedAtTime "2022-10-11 01:48:12.005131"^^xsd:string ;
-    prov:wasGeneratedBy ufrj:carregar_datasets .
+    prov:generatedAtTime "2023-02-07 04:17:34.951678"^^xsd:string ;
+    prov:wasGeneratedBy ufrj:load_all_datasets .
 
 obinvest:df_dfp a prov:Entity ;
     rdfs:label "Dataframe com dados das DREs anuais"^^xsd:string ;
-    prov:generatedAtTime "2022-10-11 01:48:12.005131"^^xsd:string ;
-    prov:wasGeneratedBy ufrj:carregar_datasets .
+    prov:generatedAtTime "2023-02-07 04:17:34.951678"^^xsd:string ;
+    prov:wasGeneratedBy ufrj:load_all_datasets .
 
 obinvest:df_dfp_ano a prov:Entity ;
     rdfs:label "Dataframe com dados das DREs anuais, adicionada a coluna ano"^^xsd:string ;
-    prov:generatedAtTime "2022-10-11 01:48:20.348637"^^xsd:string ;
-    prov:wasGeneratedBy ufrj:adiciona_ano_dres .
+    prov:generatedAtTime "2023-02-07 04:17:36.358767"^^xsd:string ;
+    prov:wasGeneratedBy ufrj:adding_year_field_to_dre .
 
-obinvest:df_dfp_setor a prov:Entity ;
-    rdfs:label "Dataframe com dados das DREs anuais, adicionado o campo de setor da empresa"^^xsd:string ;
-    prov:generatedAtTime "2022-10-11 01:48:21.644323"^^xsd:string ;
-    prov:wasGeneratedBy ufrj:merge_dre_dfp_setor .
+obinvest:df_dfp_sector a prov:Entity ;
+    rdfs:label "Dataframe com dados das DREs anuais, adicionado o campo de sector da empresa"^^xsd:string ;
+    prov:generatedAtTime "2023-02-07 04:17:36.540134"^^xsd:string ;
+    prov:wasGeneratedBy ufrj:merge_dre_dfp_sector .
 
 obinvest:df_dfp_ultimo_exerc a prov:Entity ;
     rdfs:label "Dataframe com dados das DREs anuais apenas do ano relativo ao dataset"^^xsd:string ;
-    prov:generatedAtTime "2022-10-11 01:48:21.594135"^^xsd:string ;
-    prov:wasGeneratedBy ufrj:filtrar_ultimo_exerc_dfp .
+    prov:generatedAtTime "2023-02-07 04:17:36.531614"^^xsd:string ;
+    prov:wasGeneratedBy ufrj:filter_last_dfp_year .
 
 obinvest:df_itr a prov:Entity ;
     rdfs:label "Dataframe com dados das DREs trimestrais"^^xsd:string ;
-    prov:generatedAtTime "2022-10-11 01:48:12.005131"^^xsd:string ;
-    prov:wasGeneratedBy ufrj:carregar_datasets .
+    prov:generatedAtTime "2023-02-07 04:17:34.951678"^^xsd:string ;
+    prov:wasGeneratedBy ufrj:load_all_datasets .
 
 obinvest:df_itr_ano a prov:Entity ;
     rdfs:label "Dataframe com dados das DREs trimestrais, adicionada a coluna ano"^^xsd:string ;
-    prov:generatedAtTime "2022-10-11 01:48:20.348637"^^xsd:string ;
-    prov:wasGeneratedBy ufrj:adiciona_ano_dres .
+    prov:generatedAtTime "2023-02-07 04:17:36.358767"^^xsd:string ;
+    prov:wasGeneratedBy ufrj:adding_year_field_to_dre .
 
 obinvest:df_obinvest a prov:Entity ;
     rdfs:label "Dataframe final com dados das DREs trimestrais"^^xsd:string ;
-    prov:generatedAtTime "2022-10-11 01:48:32.178776"^^xsd:string ;
-    prov:wasGeneratedBy ufrj:padronizacao_valor_conta .
+    prov:generatedAtTime "2023-02-07 04:17:38.026050"^^xsd:string ;
+    prov:wasGeneratedBy ufrj:standardization_account_value .
 
 obinvest:df_obinvest_campo_trimestre a prov:Entity ;
     rdfs:label "Dataframe com dados das DREs trimestrais, adicionada a coluna trimestre"^^xsd:string ;
-    prov:generatedAtTime "2022-10-11 01:48:24.355228"^^xsd:string ;
-    prov:wasGeneratedBy ufrj:adiciona_campo_trimestre .
+    prov:generatedAtTime "2023-02-07 04:17:36.912968"^^xsd:string ;
+    prov:wasGeneratedBy ufrj:adding_quarter_field .
 
 obinvest:df_obinvest_tratado a prov:Entity ;
     rdfs:label "Dataframe com valores das DREs acumuladas dos tres primeiros trimestres"^^xsd:string ;
-    prov:generatedAtTime "2022-10-11 01:48:21.988484"^^xsd:string ;
-    prov:wasGeneratedBy ufrj:remove_registros_duplicados .
+    prov:generatedAtTime "2023-02-07 04:17:36.588192"^^xsd:string ;
+    prov:wasGeneratedBy ufrj:remove_duplicate_records .
 
 obinvest:df_trim123 a prov:Entity ;
     rdfs:label "Dataframe com dados das DREs trimestrais dos trimestres 1, 2 e 3"^^xsd:string ;
-    prov:generatedAtTime "2022-10-11 01:48:21.395574"^^xsd:string ;
-    prov:wasGeneratedBy ufrj:obter_trimestres_123 .
+    prov:generatedAtTime "2023-02-07 04:17:36.502029"^^xsd:string ;
+    prov:wasGeneratedBy ufrj:filter_quarters_123 .
 
 obinvest:df_trim1234 a prov:Entity ;
     rdfs:label "Dataframe com dados das DREs de todos os trimestres"^^xsd:string ;
-    prov:generatedAtTime "2022-10-11 01:48:21.804044"^^xsd:string ;
-    prov:wasGeneratedBy ufrj:concatena_trimestres .
+    prov:generatedAtTime "2023-02-07 04:17:36.565550"^^xsd:string ;
+    prov:wasGeneratedBy ufrj:concatenate_quarters .
 
 obinvest:df_trim4 a prov:Entity ;
     rdfs:label "Dataframe com dados das DREs do 4 trimestre, subtraindo DFP anual pelo acumulado dos tres primeiros"^^xsd:string ;
-    prov:generatedAtTime "2022-10-11 01:48:21.765933"^^xsd:string ;
-    prov:wasGeneratedBy ufrj:obter_trimestre_4 .
+    prov:generatedAtTime "2023-02-07 04:17:36.559541"^^xsd:string ;
+    prov:wasGeneratedBy ufrj:filter_quarter_4 .
 
 ufrj:PPGI a prov:Agent,
         "prov:Organization"^^xsd:string ;
@@ -231,13 +242,76 @@ ufrj:UFRJ a prov:Agent,
         "prov:Organization"^^xsd:string ;
     foaf:name "Universidade Federal do Rio de Janeiro"^^xsd:string .
 
-ufrj:adiciona_campo_trimestre a prov:Activity ;
-    prov:endedAtTime "2022-10-11T01:48:24.355228"^^xsd:dateTime ;
-    prov:startedAtTime "2022-10-11T01:48:21.988677"^^xsd:dateTime ;
+ufrj:adding_quarter_field a prov:Activity ;
+    prov:endedAtTime "2023-02-07T04:17:36.912968"^^xsd:dateTime ;
+    prov:startedAtTime "2023-02-07T04:17:36.588336"^^xsd:dateTime ;
     prov:used obinvest:df_obinvest_tratado ;
     prov:wasAssociatedWith ufrj:drecvm.ipynb .
 
-ufrj:armazenar-datasets a prov:Activity ;
+ufrj:concatenate_quarters a prov:Activity ;
+    prov:endedAtTime "2023-02-07T04:17:36.565550"^^xsd:dateTime ;
+    prov:startedAtTime "2023-02-07T04:17:36.560413"^^xsd:dateTime ;
+    prov:used obinvest:df_trim123,
+        obinvest:df_trim4 ;
+    prov:wasAssociatedWith ufrj:drecvm.ipynb .
+
+ufrj:create_dataset_obinvest a prov:Activity ;
+    prov:endedAtTime "2023-02-07T04:17:38.983155"^^xsd:dateTime ;
+    prov:startedAtTime "2023-02-07T04:17:38.026203"^^xsd:dateTime ;
+    prov:used obinvest:df_obinvest ;
+    prov:wasAssociatedWith ufrj:drecvm.ipynb .
+
+ufrj:filter_last_dfp_year a prov:Activity ;
+    prov:endedAtTime "2023-02-07T04:17:36.531614"^^xsd:dateTime ;
+    prov:startedAtTime "2023-02-07T04:17:36.522568"^^xsd:dateTime ;
+    prov:used obinvest:df_dfp_ano ;
+    prov:wasAssociatedWith ufrj:drecvm.ipynb .
+
+ufrj:filter_quarter3_cumulative a prov:Activity ;
+    prov:endedAtTime "2023-02-07T04:17:36.522432"^^xsd:dateTime ;
+    prov:startedAtTime "2023-02-07T04:17:36.503822"^^xsd:dateTime ;
+    prov:used obinvest:df_itr_sector ;
+    prov:wasAssociatedWith ufrj:drecvm.ipynb .
+
+ufrj:filter_quarter_4 a prov:Activity ;
+    prov:endedAtTime "2023-02-07T04:17:36.559541"^^xsd:dateTime ;
+    prov:startedAtTime "2023-02-07T04:17:36.540334"^^xsd:dateTime ;
+    prov:used obinvest:df_acm3,
+        obinvest:df_dfp_sector .
+
+ufrj:filter_quarters_123 a prov:Activity ;
+    prov:endedAtTime "2023-02-07T04:17:36.502029"^^xsd:dateTime ;
+    prov:startedAtTime "2023-02-07T04:17:36.467342"^^xsd:dateTime ;
+    prov:used obinvest:df_itr_sector ;
+    prov:wasAssociatedWith ufrj:drecvm.ipynb .
+
+ufrj:merge_dre_dfp_sector a prov:Activity ;
+    prov:endedAtTime "2023-02-07T04:17:36.540134"^^xsd:dateTime ;
+    prov:startedAtTime "2023-02-07T04:17:36.531751"^^xsd:dateTime ;
+    prov:used obinvest:df_cia_tratado,
+        obinvest:df_dfp_ultimo_exerc ;
+    prov:wasAssociatedWith ufrj:drecvm.ipynb .
+
+ufrj:merge_dre_itr_sector a prov:Activity ;
+    prov:endedAtTime "2023-02-07T04:17:36.467183"^^xsd:dateTime ;
+    prov:startedAtTime "2023-02-07T04:17:36.361341"^^xsd:dateTime ;
+    prov:used obinvest:df_cia_tratado,
+        obinvest:df_itr_ano ;
+    prov:wasAssociatedWith ufrj:drecvm.ipynb .
+
+ufrj:remove_duplicate_records a prov:Activity ;
+    prov:endedAtTime "2023-02-07T04:17:36.588192"^^xsd:dateTime ;
+    prov:startedAtTime "2023-02-07T04:17:36.565698"^^xsd:dateTime ;
+    prov:used obinvest:df_trim1234 ;
+    prov:wasAssociatedWith ufrj:drecvm.ipynb .
+
+ufrj:sanitaze_company_data a prov:Activity ;
+    prov:endedAtTime "2023-02-07T04:17:36.361226"^^xsd:dateTime ;
+    prov:startedAtTime "2023-02-07T04:17:36.358952"^^xsd:dateTime ;
+    prov:used obinvest:df_cia ;
+    prov:wasAssociatedWith ufrj:drecvm.ipynb .
+
+ufrj:save-datasets a prov:Activity ;
     prov:startedAtTime "2022-09-15T00:00:00"^^xsd:dateTime ;
     prov:used cvm-cademp:cad_cia_aberta.csv,
         cvm-dre-dfp:dfp_cia_aberta_DRE_con_2011.csv,
@@ -262,82 +336,19 @@ ufrj:armazenar-datasets a prov:Activity ;
         cvm-dre-itr:itr_cia_aberta_DRE_con_2019.csv,
         cvm-dre-itr:itr_cia_aberta_DRE_con_2020.csv,
         cvm-dre-itr:itr_cia_aberta_DRE_con_2021.csv ;
-    prov:wasAssociatedWith ufrj:GRUPO2 .
+    prov:wasAssociatedWith ufrj:GRECO .
 
-ufrj:concatena_trimestres a prov:Activity ;
-    prov:endedAtTime "2022-10-11T01:48:21.804044"^^xsd:dateTime ;
-    prov:startedAtTime "2022-10-11T01:48:21.771140"^^xsd:dateTime ;
-    prov:used obinvest:df_trim123,
-        obinvest:df_trim4 ;
-    prov:wasAssociatedWith ufrj:drecvm.ipynb .
-
-ufrj:cria_dataset_obinvest a prov:Activity ;
-    prov:endedAtTime "2022-10-11T01:48:39.116743"^^xsd:dateTime ;
-    prov:startedAtTime "2022-10-11T01:48:32.179019"^^xsd:dateTime ;
-    prov:used obinvest:df_obinvest ;
-    prov:wasAssociatedWith ufrj:drecvm.ipynb .
-
-ufrj:filtrar_ultimo_exerc_dfp a prov:Activity ;
-    prov:endedAtTime "2022-10-11T01:48:21.594135"^^xsd:dateTime ;
-    prov:startedAtTime "2022-10-11T01:48:21.542504"^^xsd:dateTime ;
-    prov:used obinvest:df_dfp_ano ;
-    prov:wasAssociatedWith ufrj:drecvm.ipynb .
-
-ufrj:merge_dre_dfp_setor a prov:Activity ;
-    prov:endedAtTime "2022-10-11T01:48:21.644323"^^xsd:dateTime ;
-    prov:startedAtTime "2022-10-11T01:48:21.594275"^^xsd:dateTime ;
-    prov:used obinvest:df_cia_tratado,
-        obinvest:df_dfp_ultimo_exerc ;
-    prov:wasAssociatedWith ufrj:drecvm.ipynb .
-
-ufrj:merge_dre_itr_setor a prov:Activity ;
-    prov:endedAtTime "2022-10-11T01:48:21.167922"^^xsd:dateTime ;
-    prov:startedAtTime "2022-10-11T01:48:20.351438"^^xsd:dateTime ;
-    prov:used obinvest:df_cia_tratado,
-        obinvest:df_itr_ano ;
-    prov:wasAssociatedWith ufrj:drecvm.ipynb .
-
-ufrj:obter_acumulado_trim3 a prov:Activity ;
-    prov:endedAtTime "2022-10-11T01:48:21.542327"^^xsd:dateTime ;
-    prov:startedAtTime "2022-10-11T01:48:21.407166"^^xsd:dateTime ;
-    prov:used obinvest:df_itr_setor ;
-    prov:wasAssociatedWith ufrj:drecvm.ipynb .
-
-ufrj:obter_trimestre_4 a prov:Activity ;
-    prov:endedAtTime "2022-10-11T01:48:21.765933"^^xsd:dateTime ;
-    prov:startedAtTime "2022-10-11T01:48:21.644496"^^xsd:dateTime ;
-    prov:used obinvest:df_acm3,
-        obinvest:df_dfp_setor .
-
-ufrj:obter_trimestres_123 a prov:Activity ;
-    prov:endedAtTime "2022-10-11T01:48:21.395574"^^xsd:dateTime ;
-    prov:startedAtTime "2022-10-11T01:48:21.168105"^^xsd:dateTime ;
-    prov:used obinvest:df_itr_setor ;
-    prov:wasAssociatedWith ufrj:drecvm.ipynb .
-
-ufrj:padronizacao_valor_conta a prov:Activity ;
-    prov:endedAtTime "2022-10-11T01:48:32.178776"^^xsd:dateTime ;
-    prov:startedAtTime "2022-10-11T01:48:24.356537"^^xsd:dateTime ;
+ufrj:standardization_account_value a prov:Activity ;
+    prov:endedAtTime "2023-02-07T04:17:38.026050"^^xsd:dateTime ;
+    prov:startedAtTime "2023-02-07T04:17:36.913291"^^xsd:dateTime ;
     prov:used obinvest:df_obinvest_campo_trimestre ;
-    prov:wasAssociatedWith ufrj:drecvm.ipynb .
-
-ufrj:remove_registros_duplicados a prov:Activity ;
-    prov:endedAtTime "2022-10-11T01:48:21.988484"^^xsd:dateTime ;
-    prov:startedAtTime "2022-10-11T01:48:21.804275"^^xsd:dateTime ;
-    prov:used obinvest:df_trim1234 ;
-    prov:wasAssociatedWith ufrj:drecvm.ipynb .
-
-ufrj:trata_dados_companhias a prov:Activity ;
-    prov:endedAtTime "2022-10-11T01:48:20.351310"^^xsd:dateTime ;
-    prov:startedAtTime "2022-10-11T01:48:20.348838"^^xsd:dateTime ;
-    prov:used obinvest:df_cia ;
     prov:wasAssociatedWith ufrj:drecvm.ipynb .
 
 cvm-cademp:cad_cia_aberta.csv a prov:Entity,
         "void:Dataset"^^xsd:string ;
     rdfs:label "Dataset com dados cadastrais das empresas listadas na CVM"^^xsd:string ;
     prov:wasDerivedFrom obinvest:github-drecvm ;
-    prov:wasGeneratedBy cvm:criar-dataset .
+    prov:wasGeneratedBy cvm:create-dataset .
 
 cvm-dre-dfp:dfp_cia_aberta_DRE_con_2011.csv a prov:Entity,
         "void:Dataset"^^xsd:string ;
@@ -473,32 +484,27 @@ cvm-dre-itr:itr_cia_aberta_DRE_con_2021.csv a prov:Entity,
 
 obinvest:df_cia_tratado a prov:Entity ;
     rdfs:label "Dataframe com dados das empresas ativas, apenas com os campos necessarios"^^xsd:string ;
-    prov:generatedAtTime "2022-10-11 01:48:20.351310"^^xsd:string ;
-    prov:wasGeneratedBy ufrj:trata_dados_companhias .
+    prov:generatedAtTime "2023-02-07 04:17:36.361226"^^xsd:string ;
+    prov:wasGeneratedBy ufrj:sanitaze_company_data .
 
-obinvest:df_itr_setor a prov:Entity ;
-    rdfs:label "Dataframe com dados das DREs trimestrais, adicionado o campo de setor da empresa"^^xsd:string ;
-    prov:generatedAtTime "2022-10-11 01:48:21.167922"^^xsd:string ;
-    prov:wasGeneratedBy ufrj:merge_dre_itr_setor .
+obinvest:df_itr_sector a prov:Entity ;
+    rdfs:label "Dataframe com dados das DREs trimestrais, adicionado o campo de sector da empresa"^^xsd:string ;
+    prov:generatedAtTime "2023-02-07 04:17:36.467183"^^xsd:string ;
+    prov:wasGeneratedBy ufrj:merge_dre_itr_sector .
 
-ufrj:MAI712 a prov:Agent,
-        "prov:Organization"^^xsd:string ;
-    prov:actedOnBehalfOf ufrj:PPGI ;
-    foaf:name "Disciplina de Fundamentos de Ciências de Dados"^^xsd:string .
-
-ufrj:adiciona_ano_dres a prov:Activity ;
-    prov:endedAtTime "2022-10-11T01:48:20.348637"^^xsd:dateTime ;
-    prov:startedAtTime "2022-10-11T01:48:12.005643"^^xsd:dateTime ;
+ufrj:adding_year_field_to_dre a prov:Activity ;
+    prov:endedAtTime "2023-02-07T04:17:36.358767"^^xsd:dateTime ;
+    prov:startedAtTime "2023-02-07T04:17:34.952166"^^xsd:dateTime ;
     prov:used obinvest:df_dfp,
         obinvest:df_itr ;
     prov:wasAssociatedWith ufrj:drecvm.ipynb .
 
-cvm:criar-dataset a prov:Activity ;
+cvm:create-dataset a prov:Activity ;
     prov:wasAssociatedWith cvm:CVM .
 
-ufrj:carregar_datasets a prov:Activity ;
-    prov:endedAtTime "2022-10-11T01:48:12.005131"^^xsd:dateTime ;
-    prov:startedAtTime "2022-10-11T01:48:07.802207"^^xsd:dateTime ;
+ufrj:load_all_datasets a prov:Activity ;
+    prov:endedAtTime "2023-02-07T04:17:34.951678"^^xsd:dateTime ;
+    prov:startedAtTime "2023-02-07T04:17:34.288788"^^xsd:dateTime ;
     prov:used cvm-cademp:cad_cia_aberta.csv,
         cvm-dre-dfp:dfp_cia_aberta_DRE_con_2011.csv,
         cvm-dre-dfp:dfp_cia_aberta_DRE_con_2012.csv,
@@ -524,29 +530,29 @@ ufrj:carregar_datasets a prov:Activity ;
         cvm-dre-itr:itr_cia_aberta_DRE_con_2021.csv ;
     prov:wasAssociatedWith ufrj:drecvm.ipynb .
 
-ufrj:GRUPO2 a prov:Agent,
+ufrj:GRECO a prov:Agent,
         "prov:Organization"^^xsd:string ;
-    prov:actedOnBehalfOf ufrj:MAI712 ;
-    foaf:name "Grupo 02 para o trabalho final"^^xsd:string .
+    prov:actedOnBehalfOf ufrj:PPGI ;
+    foaf:name "Greco Group"^^xsd:string .
 
 cvm:dre-dfp a prov:Entity,
         "foaf:Document"^^xsd:string ;
     rdfs:label "Documento que representa o conceito de DREs do tipo Trimestral"^^xsd:string ;
-    prov:wasGeneratedBy cvm:criar-dataset .
+    prov:wasGeneratedBy cvm:create-dataset .
 
 cvm:dre-itr a prov:Entity,
         "foaf:Document"^^xsd:string ;
     rdfs:label "Documento que representa o conceito de DREs do tipo Trimestral"^^xsd:string ;
-    prov:wasGeneratedBy cvm:criar-dataset .
+    prov:wasGeneratedBy cvm:create-dataset .
 
 ufrj:drecvm.ipynb a prov:Agent,
         "prov:SoftwareAgent"^^xsd:string ;
     rdfs:label "Notebook Python utilizado no trabalho"^^xsd:string ;
-    prov:actedOnBehalfOf ufrj:GRUPO2 ;
+    prov:actedOnBehalfOf ufrj:GRECO ;
     foaf:name "drecvm.ipynb"^^xsd:string .
 
 obinvest:github-drecvm a prov:Entity,
         "prov:Collection"^^xsd:string ;
     rdfs:label "Repositorio DRECVM da OBInvest"^^xsd:string ;
-    prov:wasGeneratedBy ufrj:armazenar-datasets .
+    prov:wasGeneratedBy ufrj:save-datasets .
 
