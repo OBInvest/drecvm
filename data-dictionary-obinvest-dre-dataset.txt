@@ -1,0 +1,138 @@
+-----------------------
+Field: CNPJ_CIA
+-----------------------
+   Description : CNPJ da companhia
+   Domain   : Alfanumérico
+   Data Type: varchar
+   Size   : 20
+
+-----------------------
+Field: DT_REFER
+-----------------------
+   Description : Data de referência do documento
+   Domain   : AAAA-MM-DD
+   Data Type: date
+   Size   : 10
+
+-----------------------
+Field: DENOM_CIA
+-----------------------
+   Description : Nome empresarial da companhia
+   Domain   : Alfanumérico
+   Data Type: varchar
+   Size   : 100
+
+-----------------------
+Field: CD_CVM
+-----------------------
+   Description : Código CVM
+   Domain   : Numérico
+   Data Type: char
+   Size   : 6
+
+-----------------------
+Field: GRUPO_DFP
+-----------------------
+   Description : Nome e nível de agregação da demonstração
+   Domain   : Alfanumérico
+   Data Type: varchar
+   Size   : 206
+
+-----------------------
+Field: MOEDA
+-----------------------
+   Description : Moeda
+   Domain   : Alfanumérico
+   Data Type: varchar
+   Size   : 100
+   
+-----------------------
+Field: ESCALA_MOEDA
+-----------------------
+   Description : Escala monetária
+   Domain   : Alfanumérico
+   Data Type: varchar
+   Size   : 100   
+
+-----------------------
+Field: ORDEM_EXERC
+-----------------------
+   Description : Ordem do exercício social
+   Domain   : Alfanumérico
+   Data Type: varchar
+   Size   : 9
+
+-----------------------
+Field: DT_INI_EXERC
+-----------------------
+   Description : Data início do exercício social
+   Domain   : AAAA-MM-DD
+   Data Type: date
+   Size   : 10
+   
+-----------------------
+Field: DT_FIM_EXERC
+-----------------------
+   Description : Data fim do exercício social
+   Domain   : AAAA-MM-DD
+   Data Type: date
+   Size   : 10
+
+-----------------------
+Field: CD_CONTA
+-----------------------
+   Description : Código da conta
+   Domain   : Numérico
+   Data Type: varchar
+   Size   : 18
+
+-----------------------
+Field: DS_CONTA
+-----------------------
+   Description : Description da conta
+   Domain   : Alfanumérico
+   Data Type: varchar
+   Size   : 100
+
+-----------------------
+Field: VL_CONTA
+-----------------------
+   Description : Valor da conta
+   Domain   : Numérico
+   Data Type: decimal
+   Precisão  : 29
+   Scale     : 10
+
+-----------------------
+Field: ST_CONTA_FIXA
+-----------------------
+   Description : Indica se é conta fixa ou não
+   Domain   : S/N
+   Data Type: varchar
+   Size   : 1
+
+-----------------------
+Field: ANO
+-----------------------
+   Description : Ano da data de referência do documento
+   Domain   : Numérico
+   Data Type: inteiro
+   Precisão  : 0
+   Scale     : 4
+   
+-----------------------
+Field: SETOR_ATIV
+-----------------------
+   Description : Setor de atividade
+   Domain   : Alfanumérico
+   Data Type: varchar
+   Size   : 100   
+   
+-----------------------
+Field: TRIMESTRE
+-----------------------
+   Description : Trimestre data de referência do documento
+   Domain   : Numérico
+   Data Type: inteiro
+   Precisão  : 0
+   Scale     : 1
