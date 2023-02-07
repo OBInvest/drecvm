@@ -67,7 +67,7 @@ data
 - [`README.md`](README.md): this readme file.
 - [`paper-dre_cmv.pdf`](paper-dre_cmv.pdf): pdf paper.
 - [`cmv-dre-explore.knwf`](cmv-dre-explore.knwf): knime file with used workflow during initial exploration of datasets.
-- [`data-dictionary-obinvest-dre-dataset.csv`](data-dictionary-obinvest-dre-dataset.csv): data dictionary of OBInvest dataset.
+- [`data-dictionary-obinvest-dre-dataset.txt`](data-dictionary-obinvest-dre-dataset.txt): data dictionary of OBInvest dataset.
 - [`drecvm.ipynb`](drecvm.ipynb):  python notebook python that creates OBInvest Dataset and generaterovenance during runtime.
 - [`environment.yml`](environment.yml): dependencies used in yml file.
 - [`obinvest-dre-dataset.csv`](obinvest-dre-dataset.csv): OBInvest Dataset file generated during runtime.
